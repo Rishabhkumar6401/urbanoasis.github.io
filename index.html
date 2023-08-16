@@ -1,0 +1,2130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="icon" href="assets/img/favicon.png" sizes="16x16" />
+    <title>Emaar Urban Oasis </title>
+
+    <!-- form script -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/js/intlTelInput.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/css/intlTelInput.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/css/intlTelInput.css" rel="stylesheet" />
+
+
+    <link rel="preload" href="assets/css/style.css" as="style" />
+
+    <link rel="preload" href="assets/fonts/roboto-bold-webfont.woff2" as="font" type="font/woff2" crossorigin="" />
+    <link rel="preload" href="assets/fonts/roboto-regular-webfont.woff2" as="font" type="font/woff2" crossorigin="" />
+    <link rel="preload" href="assets/fonts/muli-variablefont_wght-webfont.woff2" as="font" type="font/woff2" crossorigin="" />
+    <link rel="preload" href="assets/fonts/micon.woff2" as="font" type="font/woff2" crossorigin="" />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/app.js" defer=""></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.0/dist/jquery.min.js"></script> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+
+    <style>
+        @media only screen and (min-width: 992px) {
+            .micro-main-slider .carousel-item img {
+                height: 92vh;
+                width: 78vw;
+                margin-top: 1.8vw;
+            }
+        }
+
+        :root {
+            --colorPrimary: #252525;
+            --colorSecondary: #807e78;
+            --colorBtn: #ffffff;
+        }
+
+        #loader {
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(255, 255, 255, 1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1040;
+        }
+
+        .loader-text {
+            display: block;
+            text-align: center;
+            color: #d7d7d7;
+            font-family: Arial, sans-serif;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        .loading {
+            height: 0;
+            width: 0;
+            padding: 4vw;
+            border: 0.8vw solid #ccc;
+            border-right-color: #888;
+            border-radius: 6vw;
+            -webkit-animation: rotate 1s infinite linear;
+        }
+
+        @keyframes loader {
+            0% {
+                filter: grayscale(0);
+            }
+            50% {
+                filter: grayscale(100%);
+            }
+            100% {
+                filter: grayscale(0);
+            }
+        }
+
+        .loader-logo {
+            width: 300px;
+            -webkit-animation: loader 1.3s infinite linear;
+            -moz-animation: loader 1.3s infinite linear;
+            -ms-animation: loader 1.3s infinite linear;
+            -o-animation: loader 1.3s infinite linear;
+            animation: loader 1.3s infinite linear;
+        }
+
+        .pload {
+            display: none;
+        }
+
+        .logo {
+            max-width: 205px;
+            padding: 0;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .logo {
+                max-width: 205px;
+                padding: 0;
+            }
+        }
+
+        @media only screen and (min-width: 992px) {
+            .master-plan {
+                display: block;
+                max-width: 100% !important;
+                height: 18.5vw;
+                margin: 0 auto;
+            }
+        }
+    </style>
+
+    <!-- Google tag (gtag.js) -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11159005558"></script> -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'AW-11159005558');
+    </script>
+
+
+</head>
+
+<body data-spy="scroll" data-target="#navbarNav">
+    <div id="loader">
+        <span class="loader-text"><img src="assets/img/side-logo.webp" class="loader-logo" /></span>
+    </div>
+    <style>
+        @media only screen and (min-width: 992px) {
+            .info-box {
+                width: 27vw;
+                top: 25px;
+                left: 10px;
+                background-color: #fff;
+                color: #000;
+                text-align: center;
+                border-radius: 8px;
+                padding: 0 10px;
+                font-weight: 400;
+            }
+            .pro-status {
+                display: block;
+                text-shadow: none;
+                color: var(--colorPrimary);
+                background-color: transparent;
+                padding: 0.6vw 2.5vw 0.3vw 2vw;
+                font-weight: 700;
+            }
+            .pro-title,
+            .pro-add,
+            .pro-dev,
+            ul.pro-spec,
+            .info-box span.heading,
+            .pro-tag-line,
+            .pro-price,
+            .pro-rera {
+                text-shadow: none;
+                color: #000;
+                font-weight: 400;
+            }
+            .pro-title {
+                padding: 0.5vw 0.8vw 0.3vw;
+            }
+            .pro-title,
+            .pro-add,
+            .pro-price {
+                font-weight: 700;
+            }
+            ul.pro-spec {
+                background-color: transparent;
+                margin-bottom: 0;
+            }
+            .info-box span.list-icon {
+                display: none;
+            }
+            .pro-rera {
+                font-size: 0.8vw;
+            }
+        }
+
+        .offer {
+            display: block;
+            padding: 8px;
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        .offer-top {
+            background: #2b2468;
+            border-radius: 8px 8px 0px 0px;
+        }
+
+        .offer-bottom {
+            background: #d1e9fc;
+            border-radius: 0px 0px 8px 8px;
+        }
+
+        .offer-bg-animation {
+            color: #ffffff;
+            display: block;
+            background: linear-gradient(-45deg, rgb(184 106 31), rgb(184 106 31), rgb(184 106 31), rgb(184 106 31)) !important;
+            background-size: 400% 400%;
+            -webkit-animation: Gradient 3s ease infinite;
+            -moz-animation: Gradient 3s ease infinite;
+            animation: Gradient 3s ease infinite;
+        }
+
+        .section#overview {
+            margin-top: -10px;
+        }
+
+        .offer-bottom {
+            background: linear-gradient(-45deg, #807e78, #252525, #252525, #807e78);
+            border-radius: 15px 15px 15px 15px;
+            color: #fff;
+        }
+
+        .offer-bg-animation {
+            color: #ffffff;
+            display: block;
+            background: linear-gradient(-45deg, #2c516f, #2c516f, #2c516f, #2c516f) !important;
+            background-size: 400% 400%;
+            -webkit-animation: Gradient 3s ease infinite;
+            -moz-animation: Gradient 3s ease infinite;
+            animation: Gradient 3s ease infinite;
+        }
+
+        .logo {
+            max-width: 205px;
+            padding: 0;
+        }
+    </style>
+    <header class="micro-nav fixed-top pload">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white micro-navbar">
+            <a class="navbar-brand" href="#" onclick="return false">
+        <img src="assets/img/side-logo.webp" class="logo" />
+      </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav nav-fill">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home"><i class="mi mi-home nav-icon"></i><span class="d-sm-inline d-md-none">
+                Home</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pricing"><i class="mi mi-price nav-icon"></i> Price</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sitefloorplan"><i class="mi mi-siteplan nav-icon"></i> Site &amp; Floor
+              Plan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#amenities"><i class="mi mi-ami nav-icon"></i> Amenities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#location"><i class="mi mi-location nav-icon"></i> Location</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sitevisit"><i class="mi mi-sitevisit nav-icon"></i> Virtual Site Tour</a>
+                    </li>
+                    <li class="nav-item overflow-hidden">
+                        <a class="nav-link enqModal" href="#" data-form="md" data-title="Download brochure" data-btn="Download now" data-enquiry="Ebook Download" data-redirect="brochure" data-redirect-file="brochure.pdf" data-toggle="modal" data-target="#enqModal">
+              <i class="mi mi-download nav-icon d-inline-block animated slideInDown infinite"></i>
+              Brochure
+            </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="pload">
+        <div id="home" class="carousel slide micro-main-slider" data-ride="carousel">
+            <!-- <ol class="carousel-indicators">
+        <li data-target="#home" data-slide-to="0" class="active"></li>
+        <li data-target="#home" data-slide-to="1"></li>
+        <li data-target="#home" data-slide-to="2"></li>
+      </ol> -->
+
+
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item">
+                    <picture>
+                        <source class="lazyload d-block micro-main-slider-img" media="(max-width: 950px)" data-srcset="assets/img/banner.jpg" type="image" />
+                        <source class="lazyload d-block micro-main-slider-img" media="(min-width: 951px)" data-srcset="assets/img/banner.jpg" type="image" />
+                        <img data-sizes="auto" class="lazyload d-block micro-main-slider-img" data-srcset="assets/img/banner.jpg" />
+                    </picture>
+                </div>
+
+                <!-- <div class="carousel-item">
+          <picture>
+            <source class="lazyload d-block micro-main-slider-img" media="(max-width: 750px)"
+              data-srcset="assets/q2.jpg" type="image" />
+            <source class="lazyload d-block micro-main-slider-img" media="(min-width: 751px)"
+              data-srcset="assets/q2.jpg" type="image" />
+            <img data-sizes="auto" class="lazyload d-block micro-main-slider-img" data-srcset="assets/q2.jpg" />
+          </picture>
+        </div> -->
+
+
+                <!-- <div class="carousel-item">
+          <picture>
+            <source class="lazyload d-block micro-main-slider-img" media="(max-width: 750px)"
+              data-srcset="assets/q3.jpg" type="image" />
+            <source class="lazyload d-block micro-main-slider-img" media="(min-width: 751px)"
+              data-srcset="assets/q3.jpg" type="image" />
+            <img data-sizes="auto" class="lazyload d-block micro-main-slider-img" data-srcset="assets/q3.jpg" />
+          </picture>
+        </div> -->
+
+
+
+
+
+
+
+            </div>
+        </div>
+        <div class="info-box overflow-hidden">
+            <span class="pro-status">Booking Open</span>
+            <span class="pro-title">Emaar Urban Oasis </span>
+            <span class="pro-add">At Sector 62, Gurgaon</span>
+            <!-- <span class="pro-add">Meydan</span> -->
+            <!-- <span class="pro-dev">By Sobha Group </span> -->
+            <ul class="pro-spec" style="padding-inline-start: 20px;background-color: #EEEEEE;">
+                <li style="list-style-type: none;">
+                    <span class="list-icon" style="font-weight:bold;">▸</span> <span class="heading">Tower : 4 Towers
+          </span><br>
+
+                    <span class="list-icon" style="font-weight:bold;">▸</span> <span class="heading">Status : New Launch
+          </span><br>
+
+                    <span class="list-icon" style="font-weight:bold;">▸</span> <span class="heading">Storey: 34 Storey
+
+        </li>
+      </ul>
+      <!--  <div class="offer offer-top offer-bg-animation text-white overflow-hidden mt-1 text-uppercase mx-1 mx-md-0" style="background-color: rgb(142,120,97);">-->
+      <!--    <span class="animated bounceIn infinite d-block" style="animation-duration: 3s;"> Waterfront Living With Awe-inspiring Views of the Water-->
+      <!--</span>-->
+                    <!--  </div>-->
+                    <!--<div class="offer offer-top offer-bg-animation text-white overflow-hidden my-1 text-uppercase mx-1 mx-md-0">-->
+                    <!--Total Land Area: 1.55 mil ft2-->
+                    <!--</div>-->
+                    <!--<div class="offer offer-top offer-bg-animation text-white overflow-hidden mt-1 text-uppercase mx-1 mx-md-0">-->
+                    <!--Total Apartment ~ 2,700-->
+
+                    <!--</div>-->
+                    <!-- <div class="offer offer-bottom overflow-hidden mb-1 mx-1 mx-md-0">
+        <span class="animated bounceIn infinite d-block" style="animation-duration: 3s;">
+          Grade A Office Spaces
+        </span>
+      </div> -->
+
+                    <div class="offer offer-bottom overflow-hidden mb-1 mx-1 mx-md-0">
+                        <span class="animated bounceIn infinite d-block" style="animation-duration: 3s;">
+          Servant And Powder Room In All Units
+        </span>
+                    </div>
+
+                    <!-- <div class="offer offer-bottom overflow-hidden mb-1 mx-1 mx-md-0">
+        <span class="animated bounceIn infinite d-block" style="animation-duration: 3s;">
+          Pay Just 10% Now & Book Your Home</span>
+      </div> -->
+                    <!-- <div class="offer offer-bottom overflow-hidden mb-1 mx-1 mx-md-0">
+        <span class="animated bounceIn infinite d-block" style="animation-duration: 3s;"> Low rise , Big Size Rooms
+        </span>
+      </div> -->
+
+                    <!-- <div class="offer offer-bottom overflow-hidden mb-1 mx-1 mx-md-0">
+        <span class="animated bounceIn infinite d-block" style="animation-duration: 3s;">FULLY FITTED KITCHEN
+        </span>
+      </div>
+      <div class="offer offer-bottom overflow-hidden mb-1 mx-1 mx-md-0">
+        <span class="animated bounceIn infinite d-block" style="animation-duration: 3s;">UPGRADED INTERIOR
+        </span>
+      </div> -->
+                    <span class="pro-tag-line"> <b>3 & 4 BHK APARTMENTS<br> Starting Price </b></span> <span class="pro-price">
+        4 Cr* <small style="font-size:18px;font-weight: 700;">Onwards</small></span>
+                    <!--<span class="pro-price">Starting Price <small></small></span>-->
+                    <!--<span class="pro-price"> AED 700, 888* Onwards <small></small></span>-->
+                    <button class="btn btn-info micro-form-btn enqModal effetMoveGradient effectScale" data-form="lg" data-title="Download Brochure" data-btn="Send now" data-enquiry="Enquire Now" data-redirect="enquiry" data-toggle="modal" data-target="#enqModal">Download Brochure</button>
+                    <span class="pro-rera">
+        <!-- <span class="heading">RERA No</span> : Coming Soon</span> -->
+        </div>
+        <!-- <div class="info-box overflow-hidden">
+      <span class="pro-status">Booking Open</span> <span class="pro-title" style="font-size: 30px;" ;="">
+        PERLA 3 </span>
+      <span class="pro-add">At Andheri East, Mumbai</span>
+      <span class="pro-dev">By Urbanrise</span>
+
+      
+      <span class="d-block mt-2 text-capitalize bold mb-3 mt-3"
+        style="background: var(--colorPrimary); padding: 5px; font-weight: bold;">
+        <center><span class="d-block pt-2 pb-2 effectScale effetMoveGradient"
+            style="border: 2px solid #fff; border-style: dashed; color: #fff;">
+            <span>
+              Land Area : Upcoming<br>
+              Towers : upcoming<br>
+              Floors : upcoming<br>
+              Possession : UnderConstruction</span></center>
+      </span>
+      <span class="pro-tag-line">Spacious 1,2 & 3 BR  <br>Starting Price</span> <span
+        class="pro-price"><i class="mi mi-rs-light info-icon"></i>  74.50 Lacs*t<small> Onwards</small> </span>
+
+      <button class="btn btn-info micro-form-btn enqModal effetMoveGradient effectScale" data-form="lg"
+        data-title="Download Brochure" data-btn="Send now" data-enquiry="Enquire Now" data-redirect="enquiry"
+        data-toggle="modal" data-target="#enqModal">
+        Enquire Now
+      </button>
+      
+
+      <span class="pro-rera"><span class="heading"></span></span>
+    </div> -->
+
+
+
+
+        <!-- <span class="pro-rera"><span class="heading">MAHARERA NO :  </span>P51800033618</span> -->
+
+        <span class="pro-rera"><span class="heading"></span></span>
+        </div>
+
+        <div class="mob-form d-sm-block d-md-none d-lg-none">
+            <span class="d-block form-heading font-weight-bold">Pre-Register here for Best Offers</span>
+            <img class="text-center text-lg animate_animated animateinfinite animateslower animate_zoomIn mx-4 my-2" src="assets/img/side-logo.webp" width="320px" id="image">
+            <form action="submit.php" method="post" name="Query" id="contact_form" pix-confirm="hidden_pix_15">
+                <input name="campaignid" type="hidden" value="29823314" /><input type="hidden" name="af5" value="" />
+
+                <div class="form-group">
+                    <input type="text" name="name" class="form-control" required="" placeholder="Name" />
+                </div>
+                <!--<div class="form-group">-->
+                <!--  <input type="tel" name="mobile" class="form-control" required="" placeholder="Mobile No." id="phone1" />-->
+                <!--</div>-->
+                <div class="form-group contact_number" style="display: flex;">
+                    <select name="af3" id="phone" style="width: 80%;border: 0px solid;border-bottom: 1px solid;">
+            <option value="IN +91-">IN (+91)</option>
+            <optgroup label="Other countries">
+              <option value="DZ +213-">Algeria (+213)</option>
+              <option value="AD +376-">Andorra (+376)</option>
+              <option value="AO +244-">Angola (+244)</option>
+              <option value="AI +1264-">Anguilla (+1264)</option>
+              <option value="AG +1268-">Antigua &amp; Barbuda (+1268)</option>
+              <option value="AR +54-">Argentina (+54)</option>
+              <option value="AM +374-">Armenia (+374)</option>
+              <option value="AW +297-">Aruba (+297)</option>
+              <option value="AU +61-">Australia (+61)</option>
+              <option value="AT +43-">Austria (+43)</option>
+              <option value="AZ +994-">Azerbaijan (+994)</option>
+              <option value="BS +1242-">Bahamas (+1242)</option>
+              <option value="BH +973-">Bahrain (+973)</option>
+              <option value="BD +880-">Bangladesh (+880)</option>
+              <option value="BB +1246-">Barbados (+1246)</option>
+              <option value="BY +375-">Belarus (+375)</option>
+              <option value="BE +32-">Belgium (+32)</option>
+              <option value="BZ +501-">Belize (+501)</option>
+              <option value="BJ +229-">Benin (+229)</option>
+              <option value="BM +1441-">Bermuda (+1441)</option>
+              <option value="BT +975-">Bhutan (+975)</option>
+              <option value="BO +591-">Bolivia (+591)</option>
+              <option value="BA +387-">Bosnia Herzegovina (+387)</option>
+              <option value="BW +267-">Botswana (+267)</option>
+              <option value="BR +55-">Brazil (+55)</option>
+              <option value="BN +673-">Brunei (+673)</option>
+              <option value="BG +359-">Bulgaria (+359)</option>
+              <option value="BF +226-">Burkina Faso (+226)</option>
+              <option value="BI +257-">Burundi (+257)</option>
+              <option value="KH +855-">Cambodia (+855)</option>
+              <option value="CM +237-">Cameroon (+237)</option>
+              <option value="CA +1-">Canada (+1)</option>
+              <option value="CV +238-">Cape Verde Islands (+238)</option>
+              <option value="KY +1345-">Cayman Islands (+1345)</option>
+              <option value="CF +236-">Central African Republic (+236)</option>
+              <option value="CL +56-">Chile (+56)</option>
+              <option value="CN +86-">China (+86)</option>
+              <option value="CO +57-">Colombia (+57)</option>
+              <option value="KM +269-">Comoros (+269)</option>
+              <option value="CG +242-">Congo (+242)</option>
+              <option value="CK +682-">Cook Islands (+682)</option>
+              <option value="CR +506-">Costa Rica (+506)</option>
+              <option value="HR +385-">Croatia (+385)</option>
+              <option value="CU +53-">Cuba (+53)</option>
+              <option value="CY +90392-">Cyprus North (+90392)</option>
+              <option value="CY +357-">Cyprus South (+357)</option>
+              <option value="CZ +42-">Czech Republic (+42)</option>
+              <option value="DK +45-">Denmark (+45)</option>
+              <option value="DJ +253-">Djibouti (+253)</option>
+              <option value="DM +1809-">Dominica (+1809)</option>
+              <option value="DO +1809-">Dominican Republic (+1809)</option>
+              <option value="EC +593-">Ecuador (+593)</option>
+              <option value="EG +20-">Egypt (+20)</option>
+              <option value="SV +503-">El Salvador (+503)</option>
+              <option value="GQ +240-">Equatorial Guinea (+240)</option>
+              <option value="ER +291-">Eritrea (+291)</option>
+              <option value="EE +372-">Estonia (+372)</option>
+              <option value="ET +251-">Ethiopia (+251)</option>
+              <option value="FK +500-">Falkland Islands (+500)</option>
+              <option value="FO +298-">Faroe Islands (+298)</option>
+              <option value="FJ +679-">Fiji (+679)</option>
+              <option value="FI +358-">Finland (+358)</option>
+              <option value="FR +33-">France (+33)</option>
+              <option value="GF +594-">French Guiana (+594)</option>
+              <option value="PF +689-">French Polynesia (+689)</option>
+              <option value="GA +241-">Gabon (+241)</option>
+              <option value="GM +220-">Gambia (+220)</option>
+              <option value="GE +7880-">Georgia (+7880)</option>
+              <option value="DE +49-">Germany (+49)</option>
+              <option value="GH +233-">Ghana (+233)</option>
+              <option value="GI +350-">Gibraltar (+350)</option>
+              <option value="GR +30-">Greece (+30)</option>
+              <option value="GL +299-">Greenland (+299)</option>
+              <option value="GD +1473-">Grenada (+1473)</option>
+              <option value="GP +590-">Guadeloupe (+590)</option>
+              <option value="GU +671-">Guam (+671)</option>
+              <option value="GT +502-">Guatemala (+502)</option>
+              <option value="GN +224-">Guinea (+224)</option>
+              <option value="GW +245-">Guinea - Bissau (+245)</option>
+              <option value="GY +592-">Guyana (+592)</option>
+              <option value="HT +509-">Haiti (+509)</option>
+              <option value="HN +504-">Honduras (+504)</option>
+              <option value="HK +852-">Hong Kong (+852)</option>
+              <option value="HU +36-">Hungary (+36)</option>
+              <option value="IS +354-">Iceland (+354)</option>
+              <option value="ID +62-">Indonesia (+62)</option>
+              <option value="IN +91-">India (+91)</option>
+              <option value="IR +98-">Iran (+98)</option>
+              <option value="IQ +964-">Iraq (+964)</option>
+              <option value="IE +353-">Ireland (+353)</option>
+              <option value="IL +972-">Israel (+972)</option>
+              <option value="IT +39-">Italy (+39)</option>
+              <option value="JM +1876-">Jamaica (+1876)</option>
+              <option value="JP +81-">Japan (+81)</option>
+              <option value="JO +962-">Jordan (+962)</option>
+              <option value="KZ +7-">Kazakhstan (+7)</option>
+              <option value="KE +254-">Kenya (+254)</option>
+              <option value="KI +686-">Kiribati (+686)</option>
+              <option value="KP +850-">Korea North (+850)</option>
+              <option value="KR +82-">Korea South (+82)</option>
+              <option value="KW +965-">Kuwait (+965)</option>
+              <option value="KG +996-">Kyrgyzstan (+996)</option>
+              <option value="LA +856-">Laos (+856)</option>
+              <option value="LV +371-">Latvia (+371)</option>
+              <option value="LB +961-">Lebanon (+961)</option>
+              <option value="LS +266-">Lesotho (+266)</option>
+              <option value="LR +231-">Liberia (+231)</option>
+              <option value="LY +218-">Libya (+218)</option>
+              <option value="LI +417-">Liechtenstein (+417)</option>
+              <option value="LT +370-">Lithuania (+370)</option>
+              <option value="LU +352-">Luxembourg (+352)</option>
+              <option value="MO +853-">Macao (+853)</option>
+              <option value="MK +389-">Macedonia (+389)</option>
+              <option value="MG +261-">Madagascar (+261)</option>
+              <option value="MW +265-">Malawi (+265)</option>
+              <option value="MY +60-">Malaysia (+60)</option>
+              <option value="MV +960-">Maldives (+960)</option>
+              <option value="ML +223-">Mali (+223)</option>
+              <option value="MT +356-">Malta (+356)</option>
+              <option value="MH +692-">Marshall Islands (+692)</option>
+              <option value="MQ +596-">Martinique (+596)</option>
+              <option value="MR +222-">Mauritania (+222)</option>
+              <option value="YT +269-">Mayotte (+269)</option>
+              <option value="MX +52-">Mexico (+52)</option>
+              <option value="FM +691-">Micronesia (+691)</option>
+              <option value="MD +373-">Moldova (+373)</option>
+              <option value="MC +377-">Monaco (+377)</option>
+              <option value="MN +976-">Mongolia (+976)</option>
+              <option value="MS +1664-">Montserrat (+1664)</option>
+              <option value="MZ +258-">Mozambique (+258)</option>
+              <option value="MA +212-">Morocco (+212)</option>
+              <option value="MN +95-">Myanmar (+95)</option>
+              <option value="NA +264-">Namibia (+264)</option>
+              <option value="NR +674-">Nauru (+674)</option>
+              <option value="NP +977-">Nepal (+977)</option>
+              <option value="NL +31-">Netherlands (+31)</option>
+              <option value="NC +687-">New Caledonia (+687)</option>
+              <option value="NZ +64-">New Zealand (+64)</option>
+              <option value="NI +505-">Nicaragua (+505)</option>
+              <option value="NE +227-">Niger (+227)</option>
+              <option value="NG +234-">Nigeria (+234)</option>
+              <option value="NU +683-">Niue (+683)</option>
+              <option value="NF +672-">Norfolk Islands (+672)</option>
+              <option value="NP +670-">Northern Marianas (+670)</option>
+              <option value="NO +47-">Norway (+47)</option>
+              <option value="OM +968-">Oman (+968)</option>
+              <option value="PW +680-">Palau (+680)</option>
+              <option value="PA +507-">Panama (+507)</option>
+              <option value="PG +675-">Papua New Guinea (+675)</option>
+              <option value="PY +595-">Paraguay (+595)</option>
+              <option value="PE +51-">Peru (+51)</option>
+              <option value="PH +63-">Philippines (+63)</option>
+              <option value="PL +48-">Poland (+48)</option>
+              <option value="PT +351">Portugal (+351)</option>
+              <option value="PR +1787-">Puerto Rico (+1787)</option>
+              <option value="QA +974-">Qatar (+974)</option>
+              <option value="RE +262-">Reunion (+262)</option>
+              <option value="RO +40-">Romania (+40)</option>
+              <option value="RU +7-">Russia (+7)</option>
+              <option value="RW +250-">Rwanda (+250)</option>
+              <option value="SM +378-">San Marino (+378)</option>
+              <option value="ST +239-">Sao Tome &amp; Principe (+239)</option>
+              <option value="SA +966-">Saudi Arabia (+966)</option>
+              <option value="SN +221-">Senegal (+221)</option>
+              <option value="CS +381-">Serbia (+381)</option>
+              <option value="SC +248-">Seychelles (+248)</option>
+              <option value="SL +232-">Sierra Leone (+232)</option>
+              <option value="SG +65-">Singapore (+65)</option>
+              <option value="SK +421-">Slovak Republic (+421)</option>
+              <option value="SI +386-">Slovenia (+386)</option>
+              <option value="SB +677-">Solomon Islands (+677)</option>
+              <option value="SO +252-">Somalia (+252)</option>
+              <option value="ZA +27-">South Africa (+27)</option>
+              <option value="ES +34-">Spain (+34)</option>
+              <option value="LK +94-">Sri Lanka (+94)</option>
+              <option value="SH +290-">St. Helena (+290)</option>
+              <option value="KN +1869-">St. Kitts (+1869)</option>
+              <option value="SC +1758-">St. Lucia (+1758)</option>
+              <option value="SD +249-">Sudan (+249)</option>
+              <option value="SR +597-">Suriname (+597)</option>
+              <option value="SZ +268-">Swaziland (+268)</option>
+              <option value="SE +46-">Sweden (+46)</option>
+              <option value="CH +41-">Switzerland (+41)</option>
+              <option value="SI +963-">Syria (+963)</option>
+              <option value="TW +886-">Taiwan (+886)</option>
+              <option value="TJ +7-">Tajikstan (+7)</option>
+              <option value="TH +66-">Thailand (+66)</option>
+              <option value="TG +228-">Togo (+228)</option>
+              <option value="TO +676-">Tonga (+676)</option>
+              <option value="TT +1868-">Trinidad &amp; Tobago (+1868)</option>
+              <option value="TN +216-">Tunisia (+216)</option>
+              <option value="TR +90-">Turkey (+90)</option>
+              <option value="TM +7-">Turkmenistan (+7)</option>
+              <option value="TM +993-">Turkmenistan (+993)</option>
+              <option value="TC +1649-">Turks &amp; Caicos Islands (+1649)</option>
+              <option value="TV +688-">Tuvalu (+688)</option>
+              <option value="UG +256-">Uganda (+256)</option>
+              <option value="UA +380-">Ukraine (+380)</option>
+              <option value="AE +971-">UAE (+971)</option>
+              <option value="UY +598-">Uruguay (+598)</option>
+              <option value="US +1-">USA (+1)</option>
+              <option value="UZ +7-">Uzbekistan (+7)</option>
+              <option value="VU +678-">Vanuatu (+678)</option>
+              <option value="VA +379-">Vatican City (+379)</option>
+              <option value="VE +58-">Venezuela (+58)</option>
+              <option value="VN +84-">Vietnam (+84)</option>
+              <option value="VG +84-">Virgin Islands - British (+1284)</option>
+              <option value="VI +84-">Virgin Islands - US (+1340)</option>
+              <option value="WF +681-">Wallis &amp; Futuna (+681)</option>
+              <option value="YE +969-">Yemen (North)(+969)</option>
+              <option value="YE +967-">Yemen (South)(+967)</option>
+              <option value="ZM +260-">Zambia (+260)</option>
+              <option value="ZW +263-">Zimbabwe (+263)</option>
+            </optgroup>
+          </select>
+                    <input type="number" name="mobile" class="form-control" required="" placeholder="Mobile No." />
+                </div>
+
+                <!--<input id="country-code-1" type="text" name="country-code" hidden style="display: none" />-->
+
+                <!--   <input type="text" name="af1" value="google-ads" hidden  class="contry" style="display:none;" /> -->
+                <!--  <input type="text" name="af2" value="Emaar Urban Oasis  & HARTLAND 2 " hidden  class="contry" style="display:none;" /> -->
+
+                <div class="form-group">
+                    <input type="email" name="email" class="form-control" required="" placeholder="E-Mail Address" />
+                </div>
+                <!-- <div class="form-group">
+          <input type="number" name="af1" class="form-control" required=""
+            placeholder="WhatsApp Number With Country Code" />
+        </div> -->
+                <div class="form-group">
+                    <input type="text" name="query" class="form-control" required="" placeholder="Query" />
+                </div>
+
+                <button type="submit" name="submit" class="btn btn-info micro-form-btn effetMoveGradient">
+          Pre-Register Now
+        </button>
+            </form>
+        </div>
+        <section class="section shadow-sm lazyloaded" id="overview">
+            <span class="head text-capitalize d-none d-md-block">Overview</span>
+            <span class="d-block section-heading color-primary text-capitalize"> Emaar Urban Oasis </span>
+
+            <span class="d-block section-heading-sub color-primary text-capitalize">At Sector 62, Gurgaon</span>
+
+            <p style="text-align: justify;">
+                Emaar Urban Oasis Sector 62 Presenting exquisite, best-in-class 3 & 4 BHK apartments. Emaar Urban Oasis Sector 62 3-side open, generously sized, naturally lit, and well-ventilated 3 & 4 BHK apartments off Golf Course Extension Road with ultra-modern amenities.
+                The convenience of living close to well-known hospitals, schools, and business districts coupled with swift connectivity via NH8, MG, and Sohna Road makes these apartments a natural choice for those looking out for an ideal smart-sized
+                home in the heart of the millennial city. Emaar Urban Oasis Sector 62 Your dream home wins this one, with conviction. Emaar Urban Oasis Sector 62 Enjoy the convenience of living close to a well-developed ecosystem consisting of hospitals,
+                commercial complexes, and business districts. Nothing, like an address that saves you time, bringing the rest of the world closer to where it matters.
+
+
+                <h1>Highlights</h1>
+                <ul>
+                    <li>Luxury Residential Project</li>
+                    <li>4 Towers , 34 Storey</li>
+                    <li>3 & 4 Bhk, 34 Floors </li>
+                    <li>Hines Specifications</li>
+                    <li>All Modern Amenities</li>
+                    <li>Construction: Emaar India</li>
+                    <li>Servant And Powder Room In All Units</li>
+                </ul>
+
+
+            </p>
+
+            <button class="btn btn-sm btn-outline-info sectio-bro-btn overflow-hidden enqModal" data-form="md" data-title="Download brochure" data-btn="Download now" data-enquiry="Ebook Download" data-redirect="brochure" data-redirect-file="brochure.pdf" data-toggle="modal"
+                data-target="#enqModal">
+        <span class="d-inline-block mi mi-download mr-1 animated slideInDown infinite"></span>
+        Download Brochure
+      </button><br><br>
+
+            <!-- <iframe width="1350" height="350" src="https://www.youtube.com/embed/_F9HCZpGpmU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+        </section>
+
+        <style>
+            .highlights1 {
+                list-style-type: circle;
+                text-align: left;
+            }
+
+            .highlightimg {
+                width: 100%;
+            }
+        </style>
+
+
+        <section class="section shadow-sm lazyloaded">
+            <span class="section-link" id="pricing"></span>
+            <span class="head text-capitalize">Price</span>
+            <div class="row">
+                <div class="col-md-8" style="margin-top: 4px;">
+                    <table class="table table-striped table-borderless border micro-price-table table-pricing">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="border border-bottom-0 mb-w">Type</th>
+                                <th scope="col" class="border border-bottom-0 mb-w">Area(In Sq. Ft.)</th>
+                                <th scope="col" class="border border-bottom-0 border-right-0">Price(In Rs.)</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- <tr>
+                <td class="border border-left-0 border-top-0 border-bottom-0 price-type">
+                </td>
+                <td class="border border-left-0 border-top-0 border-bottom-0 price-carpet">Coming Soon<small
+                    class="d-inline-block d-md-none">(Carpet Area)</small></td>
+                <td class="price-amt"><i class="mi "></i>On Request*</td>
+                <td>
+                  <button class="btn btn-sm btn-info effetGradient effectScale enqModal" data-form="lg"
+                    data-title="Send me costing details" data-btn="Send now" data-enquiry="Request Price"
+                    data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">
+                    Price Breakup
+                  </button>
+                </td>
+              </tr> -->
+
+                            <tr>
+                                <td class="border border-left-0 border-top-0 border-bottom-0 price-type">3 BHK
+                                    <td class="border border-left-0 border-top-0 border-bottom-0 price-carpet">2400 Sq. Ft.<small class="d-inline-block d-md-none"></small></td>
+                                    <td class="price-amt"><i class="mi "></i>₹ On Request</i>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-sm btn-info effetGradient effectScale enqModal" data-form="lg" data-title="Send me costing details" data-btn="Send now" data-enquiry="Request Price" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">
+                    Price Breakup
+                  </button>
+                                    </td>
+                            </tr>
+
+
+                            <tr>
+                                <td class="border border-left-0 border-top-0 border-bottom-0 price-type">4 BHK
+                                    <td class="border border-left-0 border-top-0 border-bottom-0 price-carpet">3000 Sq. Ft.<small class="d-inline-block d-md-none"></small></td>
+                                    <td class="price-amt"><i class="mi "></i>₹ On Request</i>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-sm btn-info effetGradient effectScale enqModal" data-form="lg" data-title="Send me costing details" data-btn="Send now" data-enquiry="Request Price" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">
+                    Price Breakup
+                  </button>
+                                    </td>
+
+                            </tr>
+
+                            <!-- <tr>
+                <td class="border border-left-0 border-top-0 border-bottom-0 price-type">4 BHK -XL
+                </td>
+                <td class="border border-left-0 border-top-0 border-bottom-0 price-carpet">On Request<small
+                    class="d-inline-block d-md-none"></small></td>
+                <td class="price-amt"><i class="mi "></i>₹ On Request</td>
+                <td>
+                  <button class="btn btn-sm btn-info effetGradient effectScale enqModal" data-form="lg"
+                    data-title="Send me costing details" data-btn="Send now" data-enquiry="Request Price"
+                    data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">
+                    Price Breakup
+                  </button>
+                </td>
+              </tr> -->
+                            <!-- <tr>
+                <td class="border border-left-0 border-top-0 border-bottom-0 price-type">Co-Working Office Spaces
+                <td class="border border-left-0 border-top-0 border-bottom-0 price-carpet">67 Sq. Ft.<small
+                    class="d-inline-block d-md-none"></small></td>
+                <td class="price-amt"><i class="mi "></i> ₹ 5.65 Lacs* Onwards</i>
+                </td>
+                <td>
+                  <button class="btn btn-sm btn-info effetGradient effectScale enqModal" data-form="lg"
+                    data-title="Send me costing details" data-btn="Send now" data-enquiry="Request Price"
+                    data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">
+                    Price Breakup
+                  </button>
+                </td>
+                
+              </tr> -->
+
+                            <!-- <tr>
+                <td class="border border-left-0 border-top-0 border-bottom-0 price-type">3 BR
+                </td>
+                <td class="border border-left-0 border-top-0 border-bottom-0 price-carpet">Coming Soon<small
+                    class="d-inline-block d-md-none">(Carpet Area)</small></td>
+                <td class="price-amt"><i class="mi "></i>On Request*</td>
+                <td>
+                  <button class="btn btn-sm btn-info effetGradient effectScale enqModal" data-form="lg"
+                    data-title="Send me costing details" data-btn="Send now" data-enquiry="Request Price"
+                    data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">
+                    Price Breakup
+                  </button>
+                </td>
+              </tr> -->
+                            <!-- <tr>
+                <td class="border border-left-0 border-top-0 border-bottom-0 price-type">4 BR
+                </td>
+                <td class="border border-left-0 border-top-0 border-bottom-0 price-carpet">2277 Sq.Ft<small
+                    class="d-inline-block d-md-none">(Carpet Area)</small></td>
+                <td class="price-amt"><i class="mi "></i> On Request </td>
+                <td>
+                  <button class="btn btn-sm btn-info effetGradient effectScale enqModal" data-form="lg"
+                    data-title="Send me costing details" data-btn="Send now" data-enquiry="Request Price"
+                    data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">
+                    Price Breakup
+                  </button>
+                </td>
+              </tr> -->
+
+                            <!-- <tr>
+                <td class="border border-left-0 border-top-0 border-bottom-0 price-type">2 BR Duplex
+                </td>
+                <td class="border border-left-0 border-top-0 border-bottom-0 price-carpet">1880 Sqft<small
+                    class="d-inline-block d-md-none">(Carpet Area)</small></td>
+                <td class="price-amt"><i class="mi "></i> On Request
+                </td>
+                <td>
+                  <button class="btn btn-sm btn-info effetGradient effectScale enqModal" data-form="lg"
+                    data-title="Send me costing details" data-btn="Send now" data-enquiry="Request Price"
+                    data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">
+                    Price Breakup
+                  </button>
+                </td>
+              </tr> -->
+
+                            <!-- <tr>
+                <td class="border border-left-0 border-top-0 border-bottom-0 price-type">4 BR Duplex
+                </td>
+                <td class="border border-left-0 border-top-0 border-bottom-0 price-carpet">2352 Sqft<small
+                    class="d-inline-block d-md-none">(Carpet Area)</small></td>
+                <td class="price-amt"><i class="mi "></i> On Request
+                </td>
+                <td>
+                  <button class="btn btn-sm btn-info effetGradient effectScale enqModal" data-form="lg"
+                    data-title="Send me costing details" data-btn="Send now" data-enquiry="Request Price"
+                    data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">
+                    Price Breakup
+                  </button>
+                </td>
+              </tr> -->
+
+
+
+                        </tbody>
+                    </table>
+
+
+
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="text-decoration-none enqModal" data-form="lg" data-title="Send me costing details" data-btn="Send now" data-enquiry="Costing Details" data-toggle="modal" data-target="#enqModal">
+                        <div class="at-property-item shadow-sm border border-grey mt-1">
+                            <div class="at-property-img lazyloaded" data-expand="-1">
+                                <picture>
+                                    <source class="w-100 lazyloading" data-srcset="assets/img/costing-details.jpg" type="image/webp" srcset="
+                        assets/img/costing-details.jpg
+                      " sizes="222px" />
+                                    <img data-sizes="auto" class="w-100 lazyautosizes ls-is-cached lazyloaded ls-inview" data-srcset="assets/img/costing-details.jpg" sizes="222px" srcset="assets/img/costing-details.jpg" />
+                                </picture>
+                                <div class="at-property-overlayer"></div>
+                                <span class="btn btn-default at-property-btn">Enquire Now</span>
+                            </div>
+                            <div class="at-property-dis effetGradient">
+                                <h5>Complete Costing Details</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+
+
+
+
+            </div>
+        </section>
+
+
+
+        <section class="section shadow-sm lazyloaded" style="    background-color: var(--colorPrimary);color: #fff;">
+            <div class="container">
+                <div class="col-lg-12 col-xs-12">
+                    <div class="cta-video-section p-2 bg-theme" style="    background-color:  var(--colorPrimary);color: #fff;">
+                        <div class="container">
+                            <div class="cta-content">
+                                <div class="row">
+                                    <div class="col-md-4 col-xs-12">
+                                        <img src="assets/img/360view.jpg" style="width: inherit;" alt="cta-image">
+                                    </div>
+                                    <div class="col-md-8 col-xs-12" style="padding-top: 22px;">
+                                        <h3 class="mt-2 font-xl text-center text-weight">TAKE A 360 DEGREE TOUR OF THE PROJECT
+                                        </h3>
+
+                                        <h5 class="font-lg text-center text-weight ">Schedule A Virtual Tour With Our Expert
+                                        </h5>
+                                        <div class="cta-btn" style="text-align: center;">
+
+
+
+                                            <button class="btn text-white btn-bg-color btn-width mt-2" style="background-color: #fff;color: #232323 !important;" data-btn="Send now" lass="text-decoration-none enqModal" data-form="lg" data-title="Send me costing details" data-enquiry="Costing Details"
+                                                data-toggle="modal" data-target="#enqModal">Schedule A Virtual
+                        Tour
+                        <span class="btn-triangle-w">
+                          <span class="icon-icons8-right-arrow-50-_1"></span>
+                        </span>
+                      </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- site and floor plan -->
+        <section class="section shadow-sm lazyloaded" data-script="./assets/plugins/fancybox/jquery.fancybox.min.js" data-link="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+            <span class="section-link" id="sitefloorplan"></span>
+            <span class="head text-capitalize">Site &amp; Floor Plan</span>
+
+            <!-- <span class="d-block section-heading-sub text-capitalize">Master Plan</span>
+      <a href="#" class="text-decoration-none enqModal" data-form="lg" data-title="Send me Masterplan details"
+        data-btn="Send now" data-enquiry="Masterplan" data-redirect="Enquiry" data-toggle="modal"
+        data-target="#enqModal">
+        <div class="at-property-item mt-1">
+          <div class="at-property-img master-plan text-center lazyloaded" data-expand="-1">
+            <picture>
+              <source class="shadow-sm border border-grey blur lazyloading" data-srcset="assets/img/master.jpg"
+                type="image/jpg" sizes="270px" srcset="assets/img/master.jpg" />
+              <img data-sizes="auto"
+                class="shadow-sm border border-grey blur lazyautosizes ls-is-cached lazyloaded ls-inview"
+                data-srcset="assets/img/master.jpg" sizes="270px" srcset="assets/img/master.jpg" />
+            </picture>
+            <div class="at-property-overlayer"></div>
+            <span class="at-property-btn">View Master Plan</span>
+          </div>
+        </div>
+      </a> -->
+
+
+            <span class="d-block section-heading-sub text-capitalize">Site & Floor Plan</span>
+            <div class="row row-cols-1 row-cols-md-4">
+                <div class="col-md-4">
+                    <a href="#" class="text-decoration-none enqModal" data-form="lg" data-title="Send me plan details" data-btn="Send now" data-enquiry="Floor Plan" data-redirect="Enquiry" data-toggle="modal" data-target="#enqModal">
+                        <div class="at-property-item shadow-sm border border-grey mt-1">
+                            <div class="at-property-img lazyloaded" data-expand="-1">
+                                <picture>
+                                    <source class="floor-plan-img blur lazyloading" data-srcset="assets/img/master.jpg" type="image/jpg" sizes="222px" srcset="assets/img/master.jpg" />
+                                    <img data-sizes="auto" class="floor-plan-img blur lazyautosizes ls-is-cached lazyloaded ls-inview" data-srcset="assets/img/master.jpg" sizes="222px" srcset="assets/img/master.jpg" />
+                                </picture>
+                                <div class="at-property-overlayer"></div>
+                                <span class="btn btn-default at-property-btn" role="button">Enquire Now</span>
+                            </div>
+                            <div class="at-property-dis effetGradient">
+                                <h5>Master Plan</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-4">
+                    <a href="#" class="text-decoration-none enqModal" data-form="lg" data-title="Send me plan details" data-btn="Send now" data-enquiry="Floor Plan" data-redirect="Enquiry" data-toggle="modal" data-target="#enqModal">
+                        <div class="at-property-item shadow-sm border border-grey mt-1">
+                            <div class="at-property-img lazyloaded" data-expand="-1">
+                                <picture>
+                                    <source class="floor-plan-img blur lazyloading" data-srcset="assets/img/floorplan1.jpg" type="image/webp" sizes="222px" srcset="assets/img/floorplan1.jpg" />
+                                    <img data-sizes="auto" class="floor-plan-img blur lazyautosizes ls-is-cached lazyloaded ls-inview" data-srcset="assets/img/floorplan1.jpg" sizes="222px" srcset="assets/img/floorplan1.jpg" />
+                                </picture>
+                                <div class="at-property-overlayer"></div>
+                                <span class="btn btn-default at-property-btn" role="button">Enquire Now</span>
+                            </div>
+                            <div class="at-property-dis effetGradient">
+                                <h5>3 BHK</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="#" class="text-decoration-none enqModal" data-form="lg" data-title="Send me plan details" data-btn="Send now" data-enquiry="Floor Plan" data-redirect="Enquiry" data-toggle="modal" data-target="#enqModal">
+                        <div class="at-property-item shadow-sm border border-grey mt-1">
+                            <div class="at-property-img lazyloaded" data-expand="-1">
+                                <picture>
+                                    <source class="floor-plan-img blur lazyloading" data-srcset="assets/img/floorplan1.jpg" type="image/webp" sizes="222px" srcset="assets/img/floorplan1.jpg" />
+                                    <img data-sizes="auto" class="floor-plan-img blur lazyautosizes ls-is-cached lazyloaded ls-inview" data-srcset="assets/img/floorplan1.jpg" sizes="222px" srcset="assets/img/floorplan1.jpg" />
+                                </picture>
+                                <div class="at-property-overlayer"></div>
+                                <span class="btn btn-default at-property-btn" role="button">Enquire Now</span>
+                            </div>
+                            <div class="at-property-dis effetGradient">
+                                <h5>4 BHK</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- <div class="col-md-4">
+          <a href="#" class="text-decoration-none enqModal" data-form="lg" data-title="Send me plan details"
+            data-btn="Send now" data-enquiry="Floor Plan" data-redirect="Enquiry" data-toggle="modal"
+            data-target="#enqModal">
+            <div class="at-property-item shadow-sm border border-grey mt-1">
+              <div class="at-property-img lazyloaded" data-expand="-1">
+                <picture>
+                  <source class="floor-plan-img blur lazyloading" data-srcset="assets/img/floorplan2.jpg"
+                    type="image/webp" sizes="222px" srcset="assets/img/floorplan2.jpg" />
+                  <img data-sizes="auto" class="floor-plan-img blur lazyautosizes ls-is-cached lazyloaded ls-inview"
+                    data-srcset="assets/img/floorplan2.jpg" sizes="222px" srcset="assets/img/floorplan2.jpg" />
+                </picture>
+                <div class="at-property-overlayer"></div>
+                <span class="btn btn-default at-property-btn" role="button">Enquire Now</span>
+              </div>
+              <div class="at-property-dis effetGradient">
+                <h5>Shop Plan</h5>
+              </div>
+            </div>
+          </a>
+        </div> -->
+                <!-- <div class="col-md-3">
+          <a href="#" class="text-decoration-none enqModal" data-form="lg" data-title="Send me plan details"
+            data-btn="Send now" data-enquiry="Floor Plan" data-redirect="Enquiry" data-toggle="modal"
+            data-target="#enqModal">
+            <div class="at-property-item shadow-sm border border-grey mt-1">
+              <div class="at-property-img lazyloaded" data-expand="-1">
+                <picture>
+                  <source class="floor-plan-img blur lazyloading" data-srcset="assets/img/floorplan3.jpg"
+                    type="image/webp" sizes="222px" srcset="assets/img/floorplan3.jpg" />
+                  <img data-sizes="auto" class="floor-plan-img blur lazyautosizes ls-is-cached lazyloaded ls-inview"
+                    data-srcset="assets/img/floorplan3.jpg" sizes="222px" srcset="assets/img/floorplan3.jpg" />
+                </picture>
+                <div class="at-property-overlayer"></div>
+                <span class="btn btn-default at-property-btn" role="button">Enquire Now</span>
+              </div>
+              <div class="at-property-dis effetGradient">
+                <h5>3 BR </h5>
+              </div>
+            </div>
+          </a>
+        </div> -->
+
+                <!-- <div class="col">
+          <a href="#" class="text-decoration-none enqModal" data-form="lg" data-title="Send me plan details"
+            data-btn="Send now" data-enquiry="Floor Plan" data-redirect="Enquiry" data-toggle="modal"
+            data-target="#enqModal">
+            <div class="at-property-item shadow-sm border border-grey mt-1">
+              <div class="at-property-img lazyloaded" data-expand="-1">
+                <picture>
+                  <source class="floor-plan-img blur lazyloading" data-srcset="assets/img/floorplan4.jpg"
+                    type="image/webp" sizes="222px" srcset="assets/img/floorplan4.jpg" />
+                  <img data-sizes="auto" class="floor-plan-img blur lazyautosizes ls-is-cached lazyloaded ls-inview"
+                    data-srcset="assets/img/floorplan4.jpg" sizes="222px" srcset="assets/img/floorplan4.jpg" />
+                </picture>
+                <div class="at-property-overlayer"></div>
+                <span class="btn btn-default at-property-btn" role="button">Enquire Now</span>
+              </div>
+              <div class="at-property-dis effetGradient">
+                <h5>2 BR Duplex</h5>
+              </div>
+            </div>
+          </a>
+        </div> -->
+                <!-- 
+        <div class="col">
+          <a href="#" class="text-decoration-none enqModal" data-form="lg" data-title="Send me plan details"
+            data-btn="Send now" data-enquiry="Floor Plan" data-redirect="Enquiry" data-toggle="modal"
+            data-target="#enqModal">
+            <div class="at-property-item shadow-sm border border-grey mt-1">
+              <div class="at-property-img lazyloaded" data-expand="-1">
+                <picture>
+                  <source class="floor-plan-img blur lazyloading" data-srcset="assets/img/floorplan5.jpg"
+                    type="image/webp" sizes="222px" srcset="assets/img/floorplan5.jpg" />
+                  <img data-sizes="auto" class="floor-plan-img blur lazyautosizes ls-is-cached lazyloaded ls-inview"
+                    data-srcset="assets/img/floorplan5.jpg" sizes="222px" srcset="assets/img/floorplan5.jpg" />
+                </picture>
+                <div class="at-property-overlayer"></div>
+                <span class="btn btn-default at-property-btn" role="button">Enquire Now</span>
+              </div>
+              <div class="at-property-dis effetGradient">
+                <h5>4 BR Duplex</h5>
+              </div>
+            </div>
+          </a>
+        </div> -->
+
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+        <section class="section shadow-sm lazyloaded">
+            <span class="section-link" id="amenities"></span> <span class="head text-capitalize">Amenities</span>
+            <div id="ami-3" class="ami-3 owl-carousel owl-theme owl-loaded">
+                <div class="owl-stage-outer">
+                    <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 949px;">
+                        <div class="owl-item active" style="width: 454.445px; margin-right: 20px;">
+                            <div class="item-wrp">
+                                <div data-expand="-1" class="lazyloaded">
+                                    <img data-src="./assets/img/amenities/lobby.svg" class="lazyloaded" src="assets/img/amenities/kids.JPG" />
+                                    <p>Kids Play Area</p>
+                                </div>
+                                <div data-expand="-1" class="lazyloaded">
+                                    <img data-src="./assets/img/amenities/playground.png?1646759026" class="lazyloaded" src="assets/img/amenities/joging.JPG" />
+                                    <p>Jogging Track</p>
+                                </div>
+                                <div data-expand="-1" class="lazyloaded">
+                                    <img data-src="./assets/img/amenities/cri1.JPG" class="lazyloaded" src="assets/img/amenities/cri1.JPG" />
+                                    <p>Cricket Ground</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item active" style="width: 454.445px; margin-right: 20px;">
+                            <div class="item-wrp">
+                                <div data-expand="-1" class="lazyloaded">
+                                    <img data-src="./assets/img/amenities/swimming-pool.png?1646759078" class="lazyloaded" src="assets/img/amenities/swing.JPG" />
+                                    <p>Swimming Pools</p>
+                                </div>
+                                <div data-expand="-1" class="lazyloaded">
+                                    <img data-src="./assets/img/amenities/park.jpg?1646759092" class="lazyloaded" src="assets/img/amenities/gym.jpg" />
+                                    <p>GYMNASIUM</p>
+                                </div>
+                                <div data-expand="-1" class="lazyloaded">
+                                    <img data-src="./assets/img/amenities/bridge.png?1646759144" class="lazyloaded ls-inview" src="assets/img/amenities/court.JPG" />
+                                    <p>Tennis Court</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-nav disabled">
+                    <button type="button" role="presentation" class="owl-prev"><span
+               aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span-->
+              aria-label="Next">›</span></button>
+                </div>
+                <div class="owl-dots disabled"></div>
+            </div>
+        </section>
+
+
+
+        <section class="section shadow-sm lazyloaded">
+            <span class="section-link" id="gallery"></span> <span class="head text-capitalize">Gallery</span>
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-2">
+                    <a data-fancybox="gallery-0" href="assets/img/g1.jpg" data-expand="-1" class="lazyloaded" data-fancybox="gallery">
+
+            <img data-sizes="auto" class="gallery-thumb lazyautosizes lazyloaded ls-inview"
+              data-srcset="assets/img/g1.jpg" sizes="210px" srcset="assets/img/g1.jpg" style="width:100%;" />
+
+          </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-2">
+                    <a data-fancybox="gallery-0" href="assets/img/g2.jpg" data-expand="-1" class="lazyloaded" data-fancybox="gallery">
+
+            <img data-sizes="auto" class="gallery-thumb lazyautosizes lazyloaded ls-inview"
+              data-srcset="assets/img/g2.jpg" sizes="210px" srcset="assets/img/g2.jpg" style="width:100%;" />
+
+          </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-2">
+                    <a data-fancybox="gallery-0" href="assets/img/g3.jpg" data-expand="-1" class="lazyloaded" data-fancybox="gallery">
+
+            <img data-sizes="auto" class="gallery-thumb lazyautosizes lazyloaded ls-inview"
+              data-srcset="assets/img/g3.jpg" sizes="210px" srcset="assets/img/g3.jpg" style="width:100%;" />
+
+          </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-2">
+                    <a data-fancybox="gallery-0" href="assets/img/g4.jpg" data-expand="-1" class="lazyloaded" data-fancybox="gallery">
+
+            <img data-sizes="auto" class="gallery-thumb lazyautosizes lazyloaded ls-inview"
+              data-srcset="assets/img/g4.jpg" sizes="210px" srcset="assets/img/g4.jpg" style="width:100%;" />
+
+          </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-2">
+                    <a data-fancybox="gallery-0" href="assets/img/g5.jpg" data-expand="-1" class="lazyloaded" data-fancybox="gallery">
+
+            <img data-sizes="auto" class="gallery-thumb lazyautosizes lazyloaded ls-inview"
+              data-srcset="assets/img/g5.jpg" sizes="210px" srcset="assets/img/g5.jpg" style="width:100%;" />
+
+          </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-2">
+                    <a data-fancybox="gallery-0" href="assets/img/g6.jpg" data-expand="-1" class="lazyloaded" data-fancybox="gallery">
+
+            <img data-sizes="auto" class="gallery-thumb lazyautosizes lazyloaded ls-inview"
+              data-srcset="assets/img/g6.jpg" sizes="210px" srcset="assets/img/g6.jpg" style="width:100%;" />
+
+          </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-2">
+                    <a data-fancybox="gallery-0" href="assets/img/g7.jpg" data-expand="-1" class="lazyloaded" data-fancybox="gallery">
+
+            <img data-sizes="auto" class="gallery-thumb lazyautosizes lazyloaded ls-inview"
+              data-srcset="assets/img/g7.jpg" sizes="210px" srcset="assets/img/g7.jpg" style="width:100%;" />
+
+          </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-2">
+                    <a data-fancybox="gallery-0" href="assets/img/g8.jpg" data-expand="-1" class="lazyloaded" data-fancybox="gallery">
+
+            <img data-sizes="auto" class="gallery-thumb lazyautosizes lazyloaded ls-inview"
+              data-srcset="assets/img/g8.jpg" sizes="210px" srcset="assets/img/g8.jpg" style="width:100%;" />
+
+          </a>
+                </div>
+                <!-- <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-2">
+          <a data-fancybox="gallery-0" href="assets/img/g5.jpg" data-expand="-1" class="lazyloaded"
+            data-fancybox="gallery">
+
+            <img data-sizes="auto" class="gallery-thumb lazyautosizes lazyloaded ls-inview"
+              data-srcset="assets/img/g5.jpg" sizes="210px" srcset="assets/img/g5.jpg" style="width:100%;" />
+
+          </a>
+        </div> -->
+                <!-- <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-2">
+          <a data-fancybox="gallery-0" href="assets/img/g6.jpg" data-expand="-1" class="lazyloaded"
+            data-fancybox="gallery">
+
+            <img data-sizes="auto" class="gallery-thumb lazyautosizes lazyloaded ls-inview"
+              data-srcset="assets/img/g6.jpg" sizes="210px" srcset="assets/img/g6.jpg" style="width:100%;" />
+
+          </a>
+        </div> -->
+                <!-- <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-2">
+          <a data-fancybox="gallery-0" href="assets/img/g7.jpg" data-expand="-1" class="lazyloaded"
+            data-fancybox="gallery">
+
+            <img data-sizes="auto" class="gallery-thumb lazyautosizes lazyloaded ls-inview"
+              data-srcset="assets/img/g7.jpg" sizes="210px" srcset="assets/img/g7.jpg" style="width:100%;" />
+
+          </a>
+        </div> -->
+                <!-- <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-2">
+          <a data-fancybox="gallery-0" href="assets/img/g8.jpg" data-expand="-1" class="lazyloaded"
+            data-fancybox="gallery">
+
+            <img data-sizes="auto" class="gallery-thumb lazyautosizes lazyloaded ls-inview"
+              data-srcset="assets/img/g8.jpg" sizes="210px" srcset="assets/img/g8.jpg" style="width:100%;" />
+
+          </a>
+        </div> -->
+
+
+            </div>
+        </section>
+
+
+
+        <section class="section shadow-sm lazyloaded" style="background-color: var(--colorPrimary);color: #fff;">
+            <div class="container">
+                <div class="col-lg-12 col-xs-12">
+                    <div class="cta-video-section p-2 bg-theme" style="background-color: var(--colorPrimary);color: #fff;">
+                        <div class="container">
+                            <div class="cta-content">
+                                <div class="row">
+                                    <div class="col-md-4 col-xs-12">
+                                        <img src="assets/img/3.jpg" style="width: inherit;" alt="cta-image">
+                                    </div>
+                                    <div class="col-md-8 col-xs-12" style="padding-top: 22px;">
+                                        <h3 class="mt-2 font-xl text-center text-weight">Receive A Digital Copy Of Our Brochure
+                                        </h3>
+
+                                        <h5 class="font-lg text-center text-weight ">And Learn More About Our Spacious Residences
+                                        </h5>
+                                        <div class="cta-btn" style="text-align: center;">
+
+
+
+                                            <button class="btn text-white btn-bg-color btn-width mt-2" style="background-color: #fff;color: #232323 !important;" data-btn="Send now" data-enquiry="Request Price" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">Request Here
+
+                        <span class="btn-triangle-w">
+                          <span class="icon-icons8-right-arrow-50-_1"></span>
+                        </span>
+                      </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section shadow-sm lazyloaded" data-script="./assets/plugins/fancybox/jquery.fancybox.min.js" data-link="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+            <span class="section-link" id="location"></span>
+            <span class="head text-capitalize">Location</span>
+            <div class="row mb-3">
+                <div class="col-md-12 col-sm-12">
+                    <!-- <span class="d-block section-heading-sub text-capitalize">Map View</span> -->
+                    <img src="assets/img/map.jpg" alt="Map" style="width: 100%;" data-toggle="modal" data-target="#enqModal">
+                    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60876.25239885733!2d78.22158542078036!3d17.518690977902672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbf2be555df18f%3A0x4a330a55cb7e37bd!2sPatancheruvu%2C%20Telangana!5e0!3m2!1sen!2sin!4v1687162824187!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+
+                    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d28034.272917935625!2d77.482133!3d28.56123!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cebcf5408d141%3A0xd3a33fc2ad1e8eb9!2sThe%20Brook%20%26%20Rivulet!5e0!3m2!1sen!2sin!4v1685683663059!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                </div>
+
+
+                <!-- <div class="col-md-12 col-sm-12 lmap-div text-center">
+          <span class="d-block section-heading-sub text-capitalize text-center">Location Map </span>
+          <a href="#" class="text-decoration-none enqModal" data-form="lg" data-title="Send me plan details"
+            data-btn="Send now" data-enquiry="locationmap" data-redirect="Enquiry" data-toggle="modal"
+            data-target="#enqModal">
+            <div class="at-property-item mb-2">
+              <div class="at-property-img master-plan lazyloaded" data-expand="-1">
+                <picture>
+                  <source class="shadow-sm border border-grey lazyloading" data-srcset="assets/img/map2.jpg"
+                    type="image/webp" sizes="270px" srcset="assets/img/map2.jpg" />
+                  <img data-sizes="auto" class="shadow-sm border border-grey lazyautosizes lazyloaded ls-inview"
+                    data-srcset="assets/img/map2.jpg" sizes="270px" srcset="assets/img/map2.jpg" />
+                </picture>
+                <div class="at-property-overlayer"></div>
+                <span class="at-property-btn">View Location Map</span>
+              </div>
+            </div>
+          </a>
+        </div> -->
+            </div>
+
+            <!-- <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+        <div class="col my-2"><i class="mi mi-loc-list-2 color-primary loc-icon"></i>10m Drive from Gaur Chowk
+        </div>
+        <div class="col my-2"><i class="mi mi-loc-list-2 color-primary loc-icon"></i>300m from Planned Metro Station
+        </div>
+        <div class="col my-2"><i class="mi mi-loc-list-2 color-primary loc-icon"></i>25Km from Film City
+        </div>
+        <div class="col my-2"><i class="mi mi-loc-list-2 color-primary loc-icon"></i>Many Schools and Hospital Nearby
+        </div>
+        <div class="col my-2"><i class="mi mi-loc-list-2 color-primary loc-icon"></i>Direct Connectivity to DND Flyway
+          
+        </div>
+        <div class="col my-2"><i class="mi mi-loc-list-2 color-primary loc-icon"></i>45 min from Upcoming Jewar Airport</div>
+      </div> -->
+        </section>
+
+        <!-- Virtual Site Tour -->
+        <section class="section shadow-sm lazyload">
+            <span class="section-link" id="sitevisit"></span>
+            <span class="head text-capitalize">Virtual Site Tour</span>
+            <a href="#" class="enqModal" data-form="lg" data-title="Virtual Site Visit" data-btn="Start Tour" data-enquiry="Virtual Site Tour" data-redirect="virtualtour" data-toggle="modal" data-target="#enqModal">
+                <div class="at-property-item my-2 pt-md-0">
+                    <div class="at-property-img vsv-img">
+                        <picture>
+                            <source class="lazyload w-100" media="(max-width: 750px)" data-srcset="assets/img/vt.jpg" type="image" />
+                            <source class="lazyload w-100" media="(min-width: 751px)" data-srcset="assets/img/vt.jpg" type="image" />
+                            <img data-sizes="auto" class="lazyload w-100" data-srcset="assets/img/vt.jpg" />
+                            <!-- <video width="100%" height="550" autoplay muted loop>
+                <source src="assets/img/video_2022-11-23_11-04-50.mp4" type="video/mp4">
+                <source src="assets/img/video_2022-11-23_11-04-50.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+              </video> -->
+                        </picture>
+                        <div class="vsv-text-bk">
+                            <div class="vsv-text-bg">
+                                <div class="vsv-icon lazyload"></div>
+                                <span class="text-uppercase h1 font-weight-bold mb-0 d-none d-lg-block">Virtual Tour</span>
+                                <span class="text-capitalize text-center d-none d-lg-block">Emaar Urban Oasis, At Sector 62, Gurgaon
+                  
+
+                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="d-block text-capitalize text-center d-sm-block d-md-none pt-2">Emaar Urban Oasis, At Sector 62, Gurgaon
+            <br>
+
+          </span>
+                </div>
+            </a>
+        </section>
+
+        <section class="section shadow-sm lazyload" id="developer">
+            <!-- <div class="d-block pt-2 pb-1 text-center">
+        <img src="assets/img/side-logo.webp" style="max-width: 100%; display: inline-block;" />
+      </div> -->
+            <span class="d-block section-heading-sub text-capitalize">About Developer</span>
+            <p style="text-align: justify;">
+
+                We, a renowned real estate development company, entered the Indian market in 2005. Known for its commitment to timely delivery and customer satisfaction, We has received several awards and recognition for its pioneering work and iconic projects. In Gurugram,
+                We has successfully developed residential and commercial properties such as Marbella Villas, Digital Greens, Emerald Hills, and Palm Drive. The company has also left its mark with projects like The Palm Springs Villas, Commonwealth Games
+                Village in Delhi, Palm Hills, and Gurgaon Greens. Our properties are highly regarded for their thoughtful architecture, excellent engineering, and flawless execution. With its global presence and expertise in properties, shopping malls,
+                retail, hospitality, and leisure.
+            </p>
+        </section>
+        <!--  <section class="section shadow-sm lazyload" id="developer">
+      
+      <span class="d-block section-heading-sub text-capitalize"></span>
+      <p>
+       
+      </p>
+    </section> -->
+
+
+        <style>
+            #image {
+                margin-top: 10px;
+            }
+        </style>
+
+        <div class="micro-side text-center">
+            <div class="og-section pb-2">
+                <ul class="nav nav-fill og-block">
+                    <li class="nav-item enqModal" data-form="lg" data-title="Organize Site Visit" data-btn="Request Site Visit" data-enquiry="Organize Site Visit" data-toggle="modal" data-target="#enqModal">
+                        Organize Site Visit
+                    </li>
+                    <li class="nav-item" onclick="window.open('https://api.whatsapp.com/send?phone=+919999156255&text=Hi!%20I%27m%20Interested%20In%20Emaar%20Urban%20Oasis%20At%20Sector%2062.%20Please%20Share%20More%20Details%20Here.', '_blank');">
+
+
+                        <span class="mi mi-whatsapp action-icon"><span class="path1"></span><span class="path2"></span><span class="path3"></span></span>
+                        +91 99991 56255
+                    </li>
+                </ul>
+                <button class="btn btn-sm btn-info micro-form-btn-sm effetGradient effectScale enqModal mt-1" data-form="sm" data-title="Immediate Call Back" data-btn="Request Call Now" data-enquiry="Immediate Call Back" data-toggle="modal" data-target="#enqModal">
+          <span class="mi mi-call action-icon"></span> Request Call Back
+        </button>
+            </div><br>
+            <img class="text-center text-lg animate_animated animateinfinite animateslower animate_zoomIn mx-4 my-2" src="assets/img/side-logo.webp" width="320px" id="image">
+            <span class="d-block form-heading font-weight-bold my-2">Pre-Register here for Best Offers</span>
+            <form action="submit.php" method="post" name="Query" id="contact_form" pix-confirm="hidden_pix_15">
+                <input name="campaignid" type="hidden" value="29823314" /><input type="hidden" name="af5" value="" />
+                <div class="form-group">
+                    <input type="text" name="name" class="form-control" required="" placeholder="Name" />
+                </div>
+                <!--<div class="form-group">-->
+                <!--  <input type="tel" name="mobile" class="form-control" required="" placeholder="Mobile No." id="phone2" />-->
+                <!--</div>-->
+                <div class="form-group contact_number" style="display: flex;">
+                    <select name="af3" id="phone" style="width: 80%;border: 0px solid;border-bottom: 1px solid;">
+            <option value="IN +91-">IN (+91)</option>
+            <optgroup label="Other countries">
+              <option value="DZ +213-">Algeria (+213)</option>
+              <option value="AD +376-">Andorra (+376)</option>
+              <option value="AO +244-">Angola (+244)</option>
+              <option value="AI +1264-">Anguilla (+1264)</option>
+              <option value="AG +1268-">Antigua &amp; Barbuda (+1268)</option>
+              <option value="AR +54-">Argentina (+54)</option>
+              <option value="AM +374-">Armenia (+374)</option>
+              <option value="AW +297-">Aruba (+297)</option>
+              <option value="AU +61-">Australia (+61)</option>
+              <option value="AT +43-">Austria (+43)</option>
+              <option value="AZ +994-">Azerbaijan (+994)</option>
+              <option value="BS +1242-">Bahamas (+1242)</option>
+              <option value="BH +973-">Bahrain (+973)</option>
+              <option value="BD +880-">Bangladesh (+880)</option>
+              <option value="BB +1246-">Barbados (+1246)</option>
+              <option value="BY +375-">Belarus (+375)</option>
+              <option value="BE +32-">Belgium (+32)</option>
+              <option value="BZ +501-">Belize (+501)</option>
+              <option value="BJ +229-">Benin (+229)</option>
+              <option value="BM +1441-">Bermuda (+1441)</option>
+              <option value="BT +975-">Bhutan (+975)</option>
+              <option value="BO +591-">Bolivia (+591)</option>
+              <option value="BA +387-">Bosnia Herzegovina (+387)</option>
+              <option value="BW +267-">Botswana (+267)</option>
+              <option value="BR +55-">Brazil (+55)</option>
+              <option value="BN +673-">Brunei (+673)</option>
+              <option value="BG +359-">Bulgaria (+359)</option>
+              <option value="BF +226-">Burkina Faso (+226)</option>
+              <option value="BI +257-">Burundi (+257)</option>
+              <option value="KH +855-">Cambodia (+855)</option>
+              <option value="CM +237-">Cameroon (+237)</option>
+              <option value="CA +1-">Canada (+1)</option>
+              <option value="CV +238-">Cape Verde Islands (+238)</option>
+              <option value="KY +1345-">Cayman Islands (+1345)</option>
+              <option value="CF +236-">Central African Republic (+236)</option>
+              <option value="CL +56-">Chile (+56)</option>
+              <option value="CN +86-">China (+86)</option>
+              <option value="CO +57-">Colombia (+57)</option>
+              <option value="KM +269-">Comoros (+269)</option>
+              <option value="CG +242-">Congo (+242)</option>
+              <option value="CK +682-">Cook Islands (+682)</option>
+              <option value="CR +506-">Costa Rica (+506)</option>
+              <option value="HR +385-">Croatia (+385)</option>
+              <option value="CU +53-">Cuba (+53)</option>
+              <option value="CY +90392-">Cyprus North (+90392)</option>
+              <option value="CY +357-">Cyprus South (+357)</option>
+              <option value="CZ +42-">Czech Republic (+42)</option>
+              <option value="DK +45-">Denmark (+45)</option>
+              <option value="DJ +253-">Djibouti (+253)</option>
+              <option value="DM +1809-">Dominica (+1809)</option>
+              <option value="DO +1809-">Dominican Republic (+1809)</option>
+              <option value="EC +593-">Ecuador (+593)</option>
+              <option value="EG +20-">Egypt (+20)</option>
+              <option value="SV +503-">El Salvador (+503)</option>
+              <option value="GQ +240-">Equatorial Guinea (+240)</option>
+              <option value="ER +291-">Eritrea (+291)</option>
+              <option value="EE +372-">Estonia (+372)</option>
+              <option value="ET +251-">Ethiopia (+251)</option>
+              <option value="FK +500-">Falkland Islands (+500)</option>
+              <option value="FO +298-">Faroe Islands (+298)</option>
+              <option value="FJ +679-">Fiji (+679)</option>
+              <option value="FI +358-">Finland (+358)</option>
+              <option value="FR +33-">France (+33)</option>
+              <option value="GF +594-">French Guiana (+594)</option>
+              <option value="PF +689-">French Polynesia (+689)</option>
+              <option value="GA +241-">Gabon (+241)</option>
+              <option value="GM +220-">Gambia (+220)</option>
+              <option value="GE +7880-">Georgia (+7880)</option>
+              <option value="DE +49-">Germany (+49)</option>
+              <option value="GH +233-">Ghana (+233)</option>
+              <option value="GI +350-">Gibraltar (+350)</option>
+              <option value="GR +30-">Greece (+30)</option>
+              <option value="GL +299-">Greenland (+299)</option>
+              <option value="GD +1473-">Grenada (+1473)</option>
+              <option value="GP +590-">Guadeloupe (+590)</option>
+              <option value="GU +671-">Guam (+671)</option>
+              <option value="GT +502-">Guatemala (+502)</option>
+              <option value="GN +224-">Guinea (+224)</option>
+              <option value="GW +245-">Guinea - Bissau (+245)</option>
+              <option value="GY +592-">Guyana (+592)</option>
+              <option value="HT +509-">Haiti (+509)</option>
+              <option value="HN +504-">Honduras (+504)</option>
+              <option value="HK +852-">Hong Kong (+852)</option>
+              <option value="HU +36-">Hungary (+36)</option>
+              <option value="IS +354-">Iceland (+354)</option>
+              <option value="ID +62-">Indonesia (+62)</option>
+              <option value="IN +91-">India (+91)</option>
+              <option value="IR +98-">Iran (+98)</option>
+              <option value="IQ +964-">Iraq (+964)</option>
+              <option value="IE +353-">Ireland (+353)</option>
+              <option value="IL +972-">Israel (+972)</option>
+              <option value="IT +39-">Italy (+39)</option>
+              <option value="JM +1876-">Jamaica (+1876)</option>
+              <option value="JP +81-">Japan (+81)</option>
+              <option value="JO +962-">Jordan (+962)</option>
+              <option value="KZ +7-">Kazakhstan (+7)</option>
+              <option value="KE +254-">Kenya (+254)</option>
+              <option value="KI +686-">Kiribati (+686)</option>
+              <option value="KP +850-">Korea North (+850)</option>
+              <option value="KR +82-">Korea South (+82)</option>
+              <option value="KW +965-">Kuwait (+965)</option>
+              <option value="KG +996-">Kyrgyzstan (+996)</option>
+              <option value="LA +856-">Laos (+856)</option>
+              <option value="LV +371-">Latvia (+371)</option>
+              <option value="LB +961-">Lebanon (+961)</option>
+              <option value="LS +266-">Lesotho (+266)</option>
+              <option value="LR +231-">Liberia (+231)</option>
+              <option value="LY +218-">Libya (+218)</option>
+              <option value="LI +417-">Liechtenstein (+417)</option>
+              <option value="LT +370-">Lithuania (+370)</option>
+              <option value="LU +352-">Luxembourg (+352)</option>
+              <option value="MO +853-">Macao (+853)</option>
+              <option value="MK +389-">Macedonia (+389)</option>
+              <option value="MG +261-">Madagascar (+261)</option>
+              <option value="MW +265-">Malawi (+265)</option>
+              <option value="MY +60-">Malaysia (+60)</option>
+              <option value="MV +960-">Maldives (+960)</option>
+              <option value="ML +223-">Mali (+223)</option>
+              <option value="MT +356-">Malta (+356)</option>
+              <option value="MH +692-">Marshall Islands (+692)</option>
+              <option value="MQ +596-">Martinique (+596)</option>
+              <option value="MR +222-">Mauritania (+222)</option>
+              <option value="YT +269-">Mayotte (+269)</option>
+              <option value="MX +52-">Mexico (+52)</option>
+              <option value="FM +691-">Micronesia (+691)</option>
+              <option value="MD +373-">Moldova (+373)</option>
+              <option value="MC +377-">Monaco (+377)</option>
+              <option value="MN +976-">Mongolia (+976)</option>
+              <option value="MS +1664-">Montserrat (+1664)</option>
+              <option value="MZ +258-">Mozambique (+258)</option>
+              <option value="MA +212-">Morocco (+212)</option>
+              <option value="MN +95-">Myanmar (+95)</option>
+              <option value="NA +264-">Namibia (+264)</option>
+              <option value="NR +674-">Nauru (+674)</option>
+              <option value="NP +977-">Nepal (+977)</option>
+              <option value="NL +31-">Netherlands (+31)</option>
+              <option value="NC +687-">New Caledonia (+687)</option>
+              <option value="NZ +64-">New Zealand (+64)</option>
+              <option value="NI +505-">Nicaragua (+505)</option>
+              <option value="NE +227-">Niger (+227)</option>
+              <option value="NG +234-">Nigeria (+234)</option>
+              <option value="NU +683-">Niue (+683)</option>
+              <option value="NF +672-">Norfolk Islands (+672)</option>
+              <option value="NP +670-">Northern Marianas (+670)</option>
+              <option value="NO +47-">Norway (+47)</option>
+              <option value="OM +968-">Oman (+968)</option>
+              <option value="PW +680-">Palau (+680)</option>
+              <option value="PA +507-">Panama (+507)</option>
+              <option value="PG +675-">Papua New Guinea (+675)</option>
+              <option value="PY +595-">Paraguay (+595)</option>
+              <option value="PE +51-">Peru (+51)</option>
+              <option value="PH +63-">Philippines (+63)</option>
+              <option value="PL +48-">Poland (+48)</option>
+              <option value="PT +351">Portugal (+351)</option>
+              <option value="PR +1787-">Puerto Rico (+1787)</option>
+              <option value="QA +974-">Qatar (+974)</option>
+              <option value="RE +262-">Reunion (+262)</option>
+              <option value="RO +40-">Romania (+40)</option>
+              <option value="RU +7-">Russia (+7)</option>
+              <option value="RW +250-">Rwanda (+250)</option>
+              <option value="SM +378-">San Marino (+378)</option>
+              <option value="ST +239-">Sao Tome &amp; Principe (+239)</option>
+              <option value="SA +966-">Saudi Arabia (+966)</option>
+              <option value="SN +221-">Senegal (+221)</option>
+              <option value="CS +381-">Serbia (+381)</option>
+              <option value="SC +248-">Seychelles (+248)</option>
+              <option value="SL +232-">Sierra Leone (+232)</option>
+              <option value="SG +65-">Singapore (+65)</option>
+              <option value="SK +421-">Slovak Republic (+421)</option>
+              <option value="SI +386-">Slovenia (+386)</option>
+              <option value="SB +677-">Solomon Islands (+677)</option>
+              <option value="SO +252-">Somalia (+252)</option>
+              <option value="ZA +27-">South Africa (+27)</option>
+              <option value="ES +34-">Spain (+34)</option>
+              <option value="LK +94-">Sri Lanka (+94)</option>
+              <option value="SH +290-">St. Helena (+290)</option>
+              <option value="KN +1869-">St. Kitts (+1869)</option>
+              <option value="SC +1758-">St. Lucia (+1758)</option>
+              <option value="SD +249-">Sudan (+249)</option>
+              <option value="SR +597-">Suriname (+597)</option>
+              <option value="SZ +268-">Swaziland (+268)</option>
+              <option value="SE +46-">Sweden (+46)</option>
+              <option value="CH +41-">Switzerland (+41)</option>
+              <option value="SI +963-">Syria (+963)</option>
+              <option value="TW +886-">Taiwan (+886)</option>
+              <option value="TJ +7-">Tajikstan (+7)</option>
+              <option value="TH +66-">Thailand (+66)</option>
+              <option value="TG +228-">Togo (+228)</option>
+              <option value="TO +676-">Tonga (+676)</option>
+              <option value="TT +1868-">Trinidad &amp; Tobago (+1868)</option>
+              <option value="TN +216-">Tunisia (+216)</option>
+              <option value="TR +90-">Turkey (+90)</option>
+              <option value="TM +7-">Turkmenistan (+7)</option>
+              <option value="TM +993-">Turkmenistan (+993)</option>
+              <option value="TC +1649-">Turks &amp; Caicos Islands (+1649)</option>
+              <option value="TV +688-">Tuvalu (+688)</option>
+              <option value="UG +256-">Uganda (+256)</option>
+              <option value="UA +380-">Ukraine (+380)</option>
+              <option value="AE +971-">UAE (+971)</option>
+              <option value="UY +598-">Uruguay (+598)</option>
+              <option value="US +1-">USA (+1)</option>
+              <option value="UZ +7-">Uzbekistan (+7)</option>
+              <option value="VU +678-">Vanuatu (+678)</option>
+              <option value="VA +379-">Vatican City (+379)</option>
+              <option value="VE +58-">Venezuela (+58)</option>
+              <option value="VN +84-">Vietnam (+84)</option>
+              <option value="VG +84-">Virgin Islands - British (+1284)</option>
+              <option value="VI +84-">Virgin Islands - US (+1340)</option>
+              <option value="WF +681-">Wallis &amp; Futuna (+681)</option>
+              <option value="YE +969-">Yemen (North)(+969)</option>
+              <option value="YE +967-">Yemen (South)(+967)</option>
+              <option value="ZM +260-">Zambia (+260)</option>
+              <option value="ZW +263-">Zimbabwe (+263)</option>
+            </optgroup>
+          </select>
+                    <input type="number" name="mobile" class="form-control" required="" placeholder="Mobile No." />
+                </div>
+
+                <!--<input id="country-code-2" type="text" name="country-code" hidden style="display: none" />-->
+                <!-- <input type="text" name="af1" value="google-ads" hidden  class="contry" style="display:none;" /> -->
+                <!-- <input type="text" name="af2" value="Emaar Urban Oasis  & HARTLAND 2 " hidden  class="contry" style="display:none;" /> -->
+
+                <div class="form-group">
+                    <input type="email" name="email" class="form-control" required="" placeholder="E-Mail Address" />
+                </div>
+                <!-- <div class="form-group">
+          <input type="number" name="af1" class="form-control" required=""
+            placeholder="WhatsApp Number With Country Code" />
+        </div> -->
+                <div class="form-group">
+                    <input type="text" name="query" class="form-control" required="" placeholder="Query" />
+                </div>
+
+                <button type="submit" name="submit" class="btn btn-info micro-form-btn effetMoveGradient">
+          Pre-Register Now
+        </button>
+            </form>
+        </div>
+        <ul class="mob-action nav nav-fill d-sm-block d-lg-none">
+            <li class="nav-item" onclick="javascript:location.href='tel:+919999156255'">
+                <span class="mi mi-call action-icon"></span> Call
+            </li>
+            <li class="nav-item enqModal" data-form="lg" data-title="Download Brochure" data-btn="Send now" data-enquiry="Enquire Now" data-redirect="enquiry" data-toggle="modal" data-target="#enqModal">
+                <span class="mi mi-enquire action-icon"></span> Enquire
+            </li>
+
+
+
+
+
+
+            <!--<li class="nav-item"-->
+            <!--  onclick="window.open('https://api.whatsapp.com/send?phone=+919999156255&text=Hi!%20I%27m%20Interested%20In%20Emaar%20Urban%20Oasis%20At%20Sector%2062.%20Please%20Share%20More%20Details%20Here.', '_blank');">-->
+            <!--  <span class="mi mi-whatsapp action-icon"><span class="path1"></span><span class="path2"></span><span-->
+            <!--      class="path3"></span></span>-->
+            <!--  WhatsApp-->
+            <!--</li>-->
+        </ul>
+        <div class="modal fade" id="enqModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered enq-modal" role="document">
+                <div class="modal-content">
+                    <div class="modal-body text-center">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+                        <div class="modal-head d-none">
+                            <span class="modal-title">Title</span>
+                        </div>
+                        <div class="d-flex">
+                            <div class="flex-fill align-self-center flex-shrink-1 modal-highlight-bg d-none d-lg-block">
+                                <span class="modal-highlight-title">We Promise</span>
+                                <ul class="modal-highlight">
+                                    <li>
+                                        <i class="mi mi-support-call"></i><span>Instant Call Back</span>
+                                    </li>
+                                    <li>
+                                        <i class="mi mi-support-visit"></i><span>Free Site Visit</span>
+                                    </li>
+                                    <li>
+                                        <i class="mi mi-support-price"></i><span>Unmatched Price</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="flex-fill align-self-center">
+                                <img src="assets/img/side-logo.webp" class="modal-logo" />
+                                <span class="modal-title-secondary">Register here and Avail the
+                  <span class="text-danger">Best Offers!!</span></span>
+                                <form action="submit.php" method="post" name="Query" id="contact_form" pix-confirm="hidden_pix_15">
+                                    <input name="campaignid" type="hidden" value="29823314" /><input type="hidden" name="af5" value="" />
+
+                                    <div class="form-group">
+                                        <input type="text" name="name" class="form-control" required="" placeholder="Name" />
+                                    </div>
+                                    <!--<div class="form-group">-->
+                                    <!--  <input type="tel" name="mobile" class="form-control" required="" placeholder="Mobile No."-->
+                                    <!--    id="phone3" />-->
+                                    <!--</div>-->
+                                    <div class="form-group contact_number" style="display: flex;">
+                                        <select name="af3" id="phone" style="width: 80%;border: 0px solid;border-bottom: 1px solid;">
+                      <option value="IN +91-">IN (+91)</option>
+                      <optgroup label="Other countries">
+                        <option value="DZ +213-">Algeria (+213)</option>
+                        <option value="AD +376-">Andorra (+376)</option>
+                        <option value="AO +244-">Angola (+244)</option>
+                        <option value="AI +1264-">Anguilla (+1264)</option>
+                        <option value="AG +1268-">Antigua &amp; Barbuda (+1268)</option>
+                        <option value="AR +54-">Argentina (+54)</option>
+                        <option value="AM +374-">Armenia (+374)</option>
+                        <option value="AW +297-">Aruba (+297)</option>
+                        <option value="AU +61-">Australia (+61)</option>
+                        <option value="AT +43-">Austria (+43)</option>
+                        <option value="AZ +994-">Azerbaijan (+994)</option>
+                        <option value="BS +1242-">Bahamas (+1242)</option>
+                        <option value="BH +973-">Bahrain (+973)</option>
+                        <option value="BD +880-">Bangladesh (+880)</option>
+                        <option value="BB +1246-">Barbados (+1246)</option>
+                        <option value="BY +375-">Belarus (+375)</option>
+                        <option value="BE +32-">Belgium (+32)</option>
+                        <option value="BZ +501-">Belize (+501)</option>
+                        <option value="BJ +229-">Benin (+229)</option>
+                        <option value="BM +1441-">Bermuda (+1441)</option>
+                        <option value="BT +975-">Bhutan (+975)</option>
+                        <option value="BO +591-">Bolivia (+591)</option>
+                        <option value="BA +387-">Bosnia Herzegovina (+387)</option>
+                        <option value="BW +267-">Botswana (+267)</option>
+                        <option value="BR +55-">Brazil (+55)</option>
+                        <option value="BN +673-">Brunei (+673)</option>
+                        <option value="BG +359-">Bulgaria (+359)</option>
+                        <option value="BF +226-">Burkina Faso (+226)</option>
+                        <option value="BI +257-">Burundi (+257)</option>
+                        <option value="KH +855-">Cambodia (+855)</option>
+                        <option value="CM +237-">Cameroon (+237)</option>
+                        <option value="CA +1-">Canada (+1)</option>
+                        <option value="CV +238-">Cape Verde Islands (+238)</option>
+                        <option value="KY +1345-">Cayman Islands (+1345)</option>
+                        <option value="CF +236-">Central African Republic (+236)</option>
+                        <option value="CL +56-">Chile (+56)</option>
+                        <option value="CN +86-">China (+86)</option>
+                        <option value="CO +57-">Colombia (+57)</option>
+                        <option value="KM +269-">Comoros (+269)</option>
+                        <option value="CG +242-">Congo (+242)</option>
+                        <option value="CK +682-">Cook Islands (+682)</option>
+                        <option value="CR +506-">Costa Rica (+506)</option>
+                        <option value="HR +385-">Croatia (+385)</option>
+                        <option value="CU +53-">Cuba (+53)</option>
+                        <option value="CY +90392-">Cyprus North (+90392)</option>
+                        <option value="CY +357-">Cyprus South (+357)</option>
+                        <option value="CZ +42-">Czech Republic (+42)</option>
+                        <option value="DK +45-">Denmark (+45)</option>
+                        <option value="DJ +253-">Djibouti (+253)</option>
+                        <option value="DM +1809-">Dominica (+1809)</option>
+                        <option value="DO +1809-">Dominican Republic (+1809)</option>
+                        <option value="EC +593-">Ecuador (+593)</option>
+                        <option value="EG +20-">Egypt (+20)</option>
+                        <option value="SV +503-">El Salvador (+503)</option>
+                        <option value="GQ +240-">Equatorial Guinea (+240)</option>
+                        <option value="ER +291-">Eritrea (+291)</option>
+                        <option value="EE +372-">Estonia (+372)</option>
+                        <option value="ET +251-">Ethiopia (+251)</option>
+                        <option value="FK +500-">Falkland Islands (+500)</option>
+                        <option value="FO +298-">Faroe Islands (+298)</option>
+                        <option value="FJ +679-">Fiji (+679)</option>
+                        <option value="FI +358-">Finland (+358)</option>
+                        <option value="FR +33-">France (+33)</option>
+                        <option value="GF +594-">French Guiana (+594)</option>
+                        <option value="PF +689-">French Polynesia (+689)</option>
+                        <option value="GA +241-">Gabon (+241)</option>
+                        <option value="GM +220-">Gambia (+220)</option>
+                        <option value="GE +7880-">Georgia (+7880)</option>
+                        <option value="DE +49-">Germany (+49)</option>
+                        <option value="GH +233-">Ghana (+233)</option>
+                        <option value="GI +350-">Gibraltar (+350)</option>
+                        <option value="GR +30-">Greece (+30)</option>
+                        <option value="GL +299-">Greenland (+299)</option>
+                        <option value="GD +1473-">Grenada (+1473)</option>
+                        <option value="GP +590-">Guadeloupe (+590)</option>
+                        <option value="GU +671-">Guam (+671)</option>
+                        <option value="GT +502-">Guatemala (+502)</option>
+                        <option value="GN +224-">Guinea (+224)</option>
+                        <option value="GW +245-">Guinea - Bissau (+245)</option>
+                        <option value="GY +592-">Guyana (+592)</option>
+                        <option value="HT +509-">Haiti (+509)</option>
+                        <option value="HN +504-">Honduras (+504)</option>
+                        <option value="HK +852-">Hong Kong (+852)</option>
+                        <option value="HU +36-">Hungary (+36)</option>
+                        <option value="IS +354-">Iceland (+354)</option>
+                        <option value="ID +62-">Indonesia (+62)</option>
+                        <option value="IN +91-">India (+91)</option>
+                        <option value="IR +98-">Iran (+98)</option>
+                        <option value="IQ +964-">Iraq (+964)</option>
+                        <option value="IE +353-">Ireland (+353)</option>
+                        <option value="IL +972-">Israel (+972)</option>
+                        <option value="IT +39-">Italy (+39)</option>
+                        <option value="JM +1876-">Jamaica (+1876)</option>
+                        <option value="JP +81-">Japan (+81)</option>
+                        <option value="JO +962-">Jordan (+962)</option>
+                        <option value="KZ +7-">Kazakhstan (+7)</option>
+                        <option value="KE +254-">Kenya (+254)</option>
+                        <option value="KI +686-">Kiribati (+686)</option>
+                        <option value="KP +850-">Korea North (+850)</option>
+                        <option value="KR +82-">Korea South (+82)</option>
+                        <option value="KW +965-">Kuwait (+965)</option>
+                        <option value="KG +996-">Kyrgyzstan (+996)</option>
+                        <option value="LA +856-">Laos (+856)</option>
+                        <option value="LV +371-">Latvia (+371)</option>
+                        <option value="LB +961-">Lebanon (+961)</option>
+                        <option value="LS +266-">Lesotho (+266)</option>
+                        <option value="LR +231-">Liberia (+231)</option>
+                        <option value="LY +218-">Libya (+218)</option>
+                        <option value="LI +417-">Liechtenstein (+417)</option>
+                        <option value="LT +370-">Lithuania (+370)</option>
+                        <option value="LU +352-">Luxembourg (+352)</option>
+                        <option value="MO +853-">Macao (+853)</option>
+                        <option value="MK +389-">Macedonia (+389)</option>
+                        <option value="MG +261-">Madagascar (+261)</option>
+                        <option value="MW +265-">Malawi (+265)</option>
+                        <option value="MY +60-">Malaysia (+60)</option>
+                        <option value="MV +960-">Maldives (+960)</option>
+                        <option value="ML +223-">Mali (+223)</option>
+                        <option value="MT +356-">Malta (+356)</option>
+                        <option value="MH +692-">Marshall Islands (+692)</option>
+                        <option value="MQ +596-">Martinique (+596)</option>
+                        <option value="MR +222-">Mauritania (+222)</option>
+                        <option value="YT +269-">Mayotte (+269)</option>
+                        <option value="MX +52-">Mexico (+52)</option>
+                        <option value="FM +691-">Micronesia (+691)</option>
+                        <option value="MD +373-">Moldova (+373)</option>
+                        <option value="MC +377-">Monaco (+377)</option>
+                        <option value="MN +976-">Mongolia (+976)</option>
+                        <option value="MS +1664-">Montserrat (+1664)</option>
+                        <option value="MZ +258-">Mozambique (+258)</option>
+                        <option value="MA +212-">Morocco (+212)</option>
+                        <option value="MN +95-">Myanmar (+95)</option>
+                        <option value="NA +264-">Namibia (+264)</option>
+                        <option value="NR +674-">Nauru (+674)</option>
+                        <option value="NP +977-">Nepal (+977)</option>
+                        <option value="NL +31-">Netherlands (+31)</option>
+                        <option value="NC +687-">New Caledonia (+687)</option>
+                        <option value="NZ +64-">New Zealand (+64)</option>
+                        <option value="NI +505-">Nicaragua (+505)</option>
+                        <option value="NE +227-">Niger (+227)</option>
+                        <option value="NG +234-">Nigeria (+234)</option>
+                        <option value="NU +683-">Niue (+683)</option>
+                        <option value="NF +672-">Norfolk Islands (+672)</option>
+                        <option value="NP +670-">Northern Marianas (+670)</option>
+                        <option value="NO +47-">Norway (+47)</option>
+                        <option value="OM +968-">Oman (+968)</option>
+                        <option value="PW +680-">Palau (+680)</option>
+                        <option value="PA +507-">Panama (+507)</option>
+                        <option value="PG +675-">Papua New Guinea (+675)</option>
+                        <option value="PY +595-">Paraguay (+595)</option>
+                        <option value="PE +51-">Peru (+51)</option>
+                        <option value="PH +63-">Philippines (+63)</option>
+                        <option value="PL +48-">Poland (+48)</option>
+                        <option value="PT +351">Portugal (+351)</option>
+                        <option value="PR +1787-">Puerto Rico (+1787)</option>
+                        <option value="QA +974-">Qatar (+974)</option>
+                        <option value="RE +262-">Reunion (+262)</option>
+                        <option value="RO +40-">Romania (+40)</option>
+                        <option value="RU +7-">Russia (+7)</option>
+                        <option value="RW +250-">Rwanda (+250)</option>
+                        <option value="SM +378-">San Marino (+378)</option>
+                        <option value="ST +239-">Sao Tome &amp; Principe (+239)</option>
+                        <option value="SA +966-">Saudi Arabia (+966)</option>
+                        <option value="SN +221-">Senegal (+221)</option>
+                        <option value="CS +381-">Serbia (+381)</option>
+                        <option value="SC +248-">Seychelles (+248)</option>
+                        <option value="SL +232-">Sierra Leone (+232)</option>
+                        <option value="SG +65-">Singapore (+65)</option>
+                        <option value="SK +421-">Slovak Republic (+421)</option>
+                        <option value="SI +386-">Slovenia (+386)</option>
+                        <option value="SB +677-">Solomon Islands (+677)</option>
+                        <option value="SO +252-">Somalia (+252)</option>
+                        <option value="ZA +27-">South Africa (+27)</option>
+                        <option value="ES +34-">Spain (+34)</option>
+                        <option value="LK +94-">Sri Lanka (+94)</option>
+                        <option value="SH +290-">St. Helena (+290)</option>
+                        <option value="KN +1869-">St. Kitts (+1869)</option>
+                        <option value="SC +1758-">St. Lucia (+1758)</option>
+                        <option value="SD +249-">Sudan (+249)</option>
+                        <option value="SR +597-">Suriname (+597)</option>
+                        <option value="SZ +268-">Swaziland (+268)</option>
+                        <option value="SE +46-">Sweden (+46)</option>
+                        <option value="CH +41-">Switzerland (+41)</option>
+                        <option value="SI +963-">Syria (+963)</option>
+                        <option value="TW +886-">Taiwan (+886)</option>
+                        <option value="TJ +7-">Tajikstan (+7)</option>
+                        <option value="TH +66-">Thailand (+66)</option>
+                        <option value="TG +228-">Togo (+228)</option>
+                        <option value="TO +676-">Tonga (+676)</option>
+                        <option value="TT +1868-">Trinidad &amp; Tobago (+1868)</option>
+                        <option value="TN +216-">Tunisia (+216)</option>
+                        <option value="TR +90-">Turkey (+90)</option>
+                        <option value="TM +7-">Turkmenistan (+7)</option>
+                        <option value="TM +993-">Turkmenistan (+993)</option>
+                        <option value="TC +1649-">Turks &amp; Caicos Islands (+1649)</option>
+                        <option value="TV +688-">Tuvalu (+688)</option>
+                        <option value="UG +256-">Uganda (+256)</option>
+                        <option value="UA +380-">Ukraine (+380)</option>
+                        <option value="AE +971-">UAE (+971)</option>
+                        <option value="UY +598-">Uruguay (+598)</option>
+                        <option value="US +1-">USA (+1)</option>
+                        <option value="UZ +7-">Uzbekistan (+7)</option>
+                        <option value="VU +678-">Vanuatu (+678)</option>
+                        <option value="VA +379-">Vatican City (+379)</option>
+                        <option value="VE +58-">Venezuela (+58)</option>
+                        <option value="VN +84-">Vietnam (+84)</option>
+                        <option value="VG +84-">Virgin Islands - British (+1284)</option>
+                        <option value="VI +84-">Virgin Islands - US (+1340)</option>
+                        <option value="WF +681-">Wallis &amp; Futuna (+681)</option>
+                        <option value="YE +969-">Yemen (North)(+969)</option>
+                        <option value="YE +967-">Yemen (South)(+967)</option>
+                        <option value="ZM +260-">Zambia (+260)</option>
+                        <option value="ZW +263-">Zimbabwe (+263)</option>
+                      </optgroup>
+                    </select>
+                                        <input type="number" name="mobile" class="form-control" required="" placeholder="Mobile No." />
+                                    </div>
+
+                                    <!--<input id="country-code-3" type="text" name="country-code" hidden style="display: none" />-->
+                                    <!-- 
+        <input type="text" name="af1" value="google-ads" hidden  class="contry" style="display:none;" /> -->
+                                    <!-- <input type="text" name="af2" value="Emaar Urban Oasis  & HARTLAND 2 " hidden  class="contry" style="display:none;" /> -->
+
+                                    <div class="form-group">
+                                        <input type="email" name="email" class="form-control" required="" placeholder="E-Mail Address" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="number" name="af1" class="form-control" required="" placeholder="WhatsApp Number With Country Code" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="query" class="form-control" required="" placeholder="Query" />
+                                    </div>
+
+                                    <button type="submit" name="submit" class="btn btn-info micro-form-btn effetMoveGradient">
+                    Pre-Register Now
+                  </button>
+                                </form>
+                            </div>
+                        </div>
+                        <a href="tel:+919999156255" class="modal-call-btn"><i class="mi mi-call"></i> +91-9999156255</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="disclaimer pload">
+        <div class="row">
+            <div class="col-12 col-md-12">
+                <center>
+                    <p>
+                        This site is for information purpose only and should not be treated as the official information.<br> Digital Media Planned by: <a href="http://digitalrubix.com/"><b>Digital Rubix</b></a> |
+                        <a href="disclaimer.html" target="_blank"><b>Disclaimer & Privacy Policy</b></a>
+                    </p>
+                </center>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(event) {
+            document.getElementById("loader").remove();
+            document.querySelector("header").classList.remove("pload");
+            document.querySelector("main").classList.remove("pload");
+            document.querySelector("footer").classList.remove("pload");
+        });
+        var sitePrimaryColor = "#e67817";
+    </script>
+
+
+
+
+    </script>
+    <script>
+        $(document).ready(function() {
+            function changeMobileInput(inputId, cCode) {
+                var phoneInputID = `#${inputId}`;
+                var input = document.querySelector(phoneInputID);
+                var iti = window.intlTelInput(input, {
+                    formatOnDisplay: true,
+                    geoIpLookup: function(callback) {
+                        $.get("http://ipinfo.io", function() {}, "jsonp").always(
+                            function(resp) {
+                                var countryCode = resp && resp.country ? resp.country : "";
+                                callback(countryCode);
+                            }
+                        );
+                    },
+                    hiddenInput: "full_number",
+                    preferredCountries: ["ae"],
+                    separateDialCode: true,
+                    utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.14/js/utils.js",
+                });
+
+                $(phoneInputID).on("countrychange", function(event) {
+                    // Get the selected country data to know which country is selected.
+                    var selectedCountryData = iti.getSelectedCountryData();
+
+                    $("#" + cCode).val(selectedCountryData.dialCode);
+
+                    // Get an example number for the selected country to use as placeholder.
+                    (newPlaceholder = intlTelInputUtils.getExampleNumber(
+                        selectedCountryData.iso2,
+                        true,
+                        intlTelInputUtils.numberFormat.INTERNATIONAL
+                    )),
+                    // Convert placeholder as exploitable mask by replacing all 1-9 numbers with 0s
+
+                    (mask =
+                        newPlaceholder[0] == "0" ?
+                        newPlaceholder.substring(1) :
+                        newPlaceholder);
+                    mask = mask.replace(/[1-9]/g, "0");
+                    mask = mask.replaceAll(" ", "-");
+
+                    // Apply the new mask for the input
+                    $(this).mask(mask);
+                });
+
+                // When the plugin loads for the first time, we have to trigger the "countrychange" event manually,
+                // but after making sure that the plugin is fully loaded by associating handler to the promise of the
+                // plugin instance.
+                iti.promise.then(function() {
+                    $(phoneInputID).trigger("countrychange");
+                });
+            }
+
+            changeMobileInput("phone1", "country-code-1");
+            changeMobileInput("phone2", "country-code-2");
+            changeMobileInput("phone3", "country-code-3");
+        });
+    </script>
+
+
+</body>
+
+</html>
