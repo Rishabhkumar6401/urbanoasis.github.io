@@ -25,6 +25,7 @@
 
     <link rel="stylesheet" href="assets/css/style.css" />
     <script src="assets/js/app.js" defer=""></script>
+    <script src="assets/js/index.js" defer=""></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.0/dist/jquery.min.js"></script> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
@@ -283,7 +284,7 @@
                         <a class="nav-link" href="#sitevisit"><i class="mi mi-sitevisit nav-icon"></i> Virtual Site Tour</a>
                     </li>
                     <li class="nav-item overflow-hidden">
-                        <a class="nav-link enqModal" id="downloadBtn"  data-form="md" data-title="Download brochure" data-btn="Download now" data-enquiry="Ebook Download" data-redirect="brochure" data-redirect-file="brochure.pdf" data-toggle="modal" data-target="#enqModal">
+                        <a class="nav-link enqModal" id="downloadBtn"  >
               <i class="mi mi-download nav-icon d-inline-block animated slideInDown infinite"></i>
               Brochure
             </a>
@@ -403,7 +404,7 @@
         4 Cr* <small style="font-size:18px;font-weight: 700;">Onwards</small></span>
                     <!--<span class="pro-price">Starting Price <small></small></span>-->
                     <!--<span class="pro-price"> AED 700, 888* Onwards <small></small></span>-->
-                    <button class="btn btn-info micro-form-btn enqModal effetMoveGradient effectScale" id="downloadBtnpdf" data-form="lg" data-title="Download Brochure" data-btn="Send now" data-enquiry="Enquire Now" data-redirect="enquiry" data-toggle="modal" data-target="#enqModal">Download Brochure</button>
+                    <button class="btn btn-info micro-form-btn enqModal effetMoveGradient effectScale" id="downloadBtnpdf" >Download Brochure</button>
                     <span class="pro-rera">
         <!-- <span class="heading">RERA No</span> : Coming Soon</span> -->
         </div>
@@ -716,19 +717,28 @@
                 <h1>Highlights</h1>
                 <ul>
                     <li>Luxury Residential Project</li>
-                    <li>4 Towers , 34 Storey</li>
-                    <li>3 & 4 Bhk, 34 Floors </li>
-                    <li>Hines Specifications</li>
+                    <li>Imported Marble</li>
+                    <li>Modular Wardrobe</li>
+                    <li>VRF System with Hi-wall Unit</li>
+                    <li>Modular Cabinetary- Chimney Hob</li>
+                    <li>Refrigerator, Microwave</li>
+                    <li>Washing Machine, RO</li>
                     <li>All Modern Amenities</li>
                     <li>Construction: Emaar India</li>
-                    <li>Servant And Powder Room In All Units</li>
+                </ul>
+                <h5>Smart Home Features</h5>
+                <ul>
+                    <li>Smart Lock at Main Door</li>
+                    <li>Video Door Phone</li>
+                    <li>Motion Sensor lights</li>
+                    <li>EV Charging points in all parking lot</li>
+                    <li>Private EV Golf Carts in each Tower</li>
                 </ul>
 
 
             </p>
 
-            <button class="btn btn-sm btn-outline-info sectio-bro-btn overflow-hidden enqModal" id="downloadBtnpd"  data-form="md" data-title="Download brochure" data-btn="Download now" data-enquiry="Ebook Download" data-redirect="brochure" data-redirect-file="brochure.pdf" data-toggle="modal"
-                data-target="#enqModal">
+            <button class="btn btn-sm btn-outline-info sectio-bro-btn overflow-hidden enqModal" id="downloadBtnpd">
         <span class="d-inline-block mi mi-download mr-1 animated slideInDown infinite"></span>
         Download Brochure
       </button><br><br>
@@ -781,12 +791,19 @@
                             <tr>
                                 <td class="border border-left-0 border-top-0 border-bottom-0 price-type">3BHK-3T-U-T
                                     <td class="border border-left-0 border-top-0 border-bottom-0 price-carpet">2262.66 Sq. Ft.<small class="d-inline-block d-md-none"></small></td>
-                                    <td class="price-amt"><i class="mi "></i>3.85Cr Onwards</i>
+                                    <td class="price-amt"><i class="mi "></i><a  class="enqModal" style="color: #000;" href="#"data-form="lg" data-title="Request To Know Price" data-btn="Send now" data-enquiry="Request Price" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">₹ On Request</a></i>
                                     </td>
                                     <td>
-                                        <button class="btn btn-sm btn-info effetGradient effectScale enqModal" data-form="lg" data-title="Send me costing details" data-btn="Send now" data-enquiry="Request Price" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">
-                    Price Breakup
+                                        <button class="btn btn-sm btn-info effetGradient effectScale" id="buttondown">
+                                            
+                    View Floor Plan
                   </button>
+                  <div id="myModals" class="modal">
+                    <div class="modalcontent1">
+                        <span class="close11button" id="close1Button">&times;</span>
+                        <img id="modalImages" src="/assets/img/bhk1.jpg" alt="Full Size Image">
+                    </div>
+                </div>
                                     </td>
                             </tr>
 
@@ -794,228 +811,342 @@
                             <tr>
                                 <td class="border border-left-0 border-top-0 border-bottom-0 price-type">3BHK-3T-U-T
                                     <td class="border border-left-0 border-top-0 border-bottom-0 price-carpet">2266.44 Sq. Ft.<small class="d-inline-block d-md-none"></small></td>
-                                    <td class="price-amt"><i class="mi "></i>3.85Cr Onwards</i>
+                                    <td class="price-amt"><i class="mi "></i><a  class="enqModal" style="color: #000;" href="#"data-form="lg" data-title="Request To Know Price" data-btn="Send now" data-enquiry="Request Price" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">₹ On Request</a></i>
                                     </td>
                                     <td>
-                                        <button class="btn btn-sm btn-info effetGradient effectScale enqModal" data-form="lg" data-title="Send me costing details" data-btn="Send now" data-enquiry="Request Price" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">
-                    Price Breakup
+                                        <button class="btn btn-sm btn-info effetGradient effectScale" id="buttondown2">
+                    View Floor Plan
                   </button>
+                  <div id="myModals2" class="modal">
+                    <div class="modalcontent2">
+                        <span class="close11button" id="close1Button2">&times;</span>
+                        <img id="modalImages2" src="/assets/img/bhk2.jpg" alt="Full Size Image">
+                    </div>
+                </div>
                                     </td>
 
                             </tr>
                             <tr>
                                 <td class="border border-left-0 border-top-0 border-bottom-0 price-type">3BHK-3T-U-T
                                     <td class="border border-left-0 border-top-0 border-bottom-0 price-carpet">2410.23 Sq. Ft.<small class="d-inline-block d-md-none"></small></td>
-                                    <td class="price-amt"><i class="mi "></i>3.85Cr Onwards</i>
+                                    <td class="price-amt"><i class="mi "></i><a  class="enqModal" style="color: #000;" href="#"data-form="lg" data-title="Request To Know Price" data-btn="Send now" data-enquiry="Request Price" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">₹ On Request</a></i>
                                     </td>
                                     <td>
-                                        <button class="btn btn-sm btn-info effetGradient effectScale enqModal" data-form="lg" data-title="Send me costing details" data-btn="Send now" data-enquiry="Request Price" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">
-                    Price Breakup
+                                        <button class="btn btn-sm btn-info effetGradient effectScale " id="buttondown3">
+                    View Floor Plan
                   </button>
+                  <div id="myModals3" class="modal">
+                    <div class="modalcontent3">
+                        <span class="close11button" id="close1Button3">&times;</span>
+                        <img id="modalImages3" src="/assets/img/bhk3.jpg" alt="Full Size Image">
+                    </div>
+                </div>
                                     </td>
 
                             </tr>
                             <tr>
                                 <td class="border border-left-0 border-top-0 border-bottom-0 price-type">4BHK-4T-S-T
                                     <td class="border border-left-0 border-top-0 border-bottom-0 price-carpet">3039.87 Sq. Ft.<small class="d-inline-block d-md-none"></small></td>
-                                    <td class="price-amt"><i class="mi "></i>5.10Cr Onwards</i>
+                                    <td class="price-amt"><i class="mi "></i><a  class="enqModal" style="color: #000;" href="#"data-form="lg" data-title="Request To Know Price" data-btn="Send now" data-enquiry="Request Price" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">₹ On Request</a></i>
                                     </td>
                                     <td>
-                                        <button class="btn btn-sm btn-info effetGradient effectScale enqModal" data-form="lg" data-title="Send me costing details" data-btn="Send now" data-enquiry="Request Price" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">
-                    Price Breakup
+                                        <button class="btn btn-sm btn-info effetGradient effectScale " id="buttondown4">
+                    View Floor Plan
                   </button>
+                  <div id="myModals4" class="modal">
+                    <div class="modalcontent4">
+                        <span class="close11button" id="close1Button4">&times;</span>
+                        <img id="modalImages4" src="/assets/img/bhk4.jpg" alt="Full Size Image">
+                    </div>
+                  </div>
                                     </td>
 
                             </tr>
                             <tr>
                                 <td class="border border-left-0 border-top-0 border-bottom-0 price-type">SIMPLEX - 4BHK-4T-S-U-T
                                     <td class="border border-left-0 border-top-0 border-bottom-0 price-carpet">3842.88 Sq. Ft.<small class="d-inline-block d-md-none"></small></td>
-                                    <td class="price-amt"><i class="mi "></i>₹ On Request</i>
+                                    <td class="price-amt"><i class="mi "></i><a  class="enqModal" style="color: #000;" href="#"data-form="lg" data-title="Request To Know Price" data-btn="Send now" data-enquiry="Request Price" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">₹ On Request</a></i>
                                     </td>
                                     <td>
-                                        <button class="btn btn-sm btn-info effetGradient effectScale enqModal" data-form="lg" data-title="Send me costing details" data-btn="Send now" data-enquiry="Request Price" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">
-                    Price Breakup
+                                        <button class="btn btn-sm btn-info effetGradient effectScale " id="buttondown5">
+                    View Floor Plan
                   </button>
+                  <div id="myModals5" class="modal">
+                    <div class="modalcontent5">
+                        <span class="close11button" id="close1Button5">&times;</span>
+                        <img id="modalImages5" src="/assets/img/bhk5.jpg" alt="Full Size Image">
+                    </div>
+                  </div>
                                     </td>
 
                             </tr>
                             <tr>
                                 <td class="border border-left-0 border-top-0 border-bottom-0 price-type">SIMPLEX - 4BHK-4T-S-U-T
                                     <td class="border border-left-0 border-top-0 border-bottom-0 price-carpet">4260.16 Sq. Ft.<small class="d-inline-block d-md-none"></small></td>
-                                    <td class="price-amt"><i class="mi "></i>₹ On Request</i>
+                                    <td class="price-amt"><i class="mi "></i><a  class="enqModal" style="color: #000;" href="#"data-form="lg" data-title="Request To Know Price" data-btn="Send now" data-enquiry="Request Price" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">₹ On Request</a></i>
                                     </td>
                                     <td>
-                                        <button class="btn btn-sm btn-info effetGradient effectScale enqModal" data-form="lg" data-title="Send me costing details" data-btn="Send now" data-enquiry="Request Price" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">
-                    Price Breakup
+                                        <button class="btn btn-sm btn-info effetGradient effectScale " id="buttondown6">
+                    View Floor Plan
                   </button>
+                  <div id="myModals6" class="modal">
+                    <div class="modalcontent6">
+                        <span class="close11button" id="close1Button6">&times;</span>
+                        <img id="modalImages6" src="/assets/img/bhk6.jpg" alt="Full Size Image">
+                    </div>
+                  </div>
                                     </td>
 
                             </tr>
                             <tr>
                                 <td class="border border-left-0 border-top-0 border-bottom-0 price-type">SIMPLEX - 4BHK-4T-STUDY-U-T
                                     <td class="border border-left-0 border-top-0 border-bottom-0 price-carpet">4388.49 Sq. Ft.<small class="d-inline-block d-md-none"></small></td>
-                                    <td class="price-amt"><i class="mi "></i>₹ On Request</i>
+                                    <td class="price-amt"><i class="mi "></i><a  class="enqModal" style="color: #000;" href="#"data-form="lg" data-title="Request To Know Price" data-btn="Send now" data-enquiry="Request Price" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">₹ On Request</a></i>
                                     </td>
                                     <td>
-                                        <button class="btn btn-sm btn-info effetGradient effectScale enqModal" data-form="lg" data-title="Send me costing details" data-btn="Send now" data-enquiry="Request Price" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">
-                    Price Breakup
+                                        <button class="btn btn-sm btn-info effetGradient effectScale" id="buttondown7">
+                    View Floor Plan
                   </button>
+                  <div id="myModals7" class="modal">
+                    <div class="modalcontent7">
+                        <span class="close11button" id="close1Button7">&times;</span>
+                        <img id="modalImages7" src="/assets/img/bhk7.jpg" alt="Full Size Image">
+                    </div>
+                  </div>
                                     </td>
 
                             </tr>
                             <tr>
                                 <td class="border border-left-0 border-top-0 border-bottom-0 price-type">SIMPLEX - 3BHK-5T-U-T
                                     <td class="border border-left-0 border-top-0 border-bottom-0 price-carpet">4770.63 Sq. Ft.<small class="d-inline-block d-md-none"></small></td>
-                                    <td class="price-amt"><i class="mi "></i>₹ On Request</i>
+                                    <td class="price-amt"><i class="mi "></i><a  class="enqModal" style="color: #000;" href="#"data-form="lg" data-title="Request To Know Price" data-btn="Send now" data-enquiry="Request Price" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">₹ On Request</a></i>
                                     </td>
                                     <td>
-                                        <button class="btn btn-sm btn-info effetGradient effectScale enqModal" data-form="lg" data-title="Send me costing details" data-btn="Send now" data-enquiry="Request Price" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">
-                    Price Breakup
+                                        <button class="btn btn-sm btn-info effetGradient effectScale " id="buttondown8">
+                    View Floor Plan
                   </button>
+                  <div id="myModals8" class="modal">
+                    <div class="modalcontent8">
+                        <span class="close11button" id="close1Button8">&times;</span>
+                        <img id="modalImages8" src="/assets/img/bhk8.jpg" alt="Full Size Image">
+                    </div>
+                  </div>
                                     </td>
 
                             </tr>
                             <tr>
                                 <td class="border border-left-0 border-top-0 border-bottom-0 price-type">SIMPLEX - 4BHK-6T-U-T
                                     <td class="border border-left-0 border-top-0 border-bottom-0 price-carpet">4685.01 Sq. Ft.<small class="d-inline-block d-md-none"></small></td>
-                                    <td class="price-amt"><i class="mi "></i>₹ On Request</i>
+                                    <td class="price-amt"><i class="mi "></i><a  class="enqModal" style="color: #000;" href="#"data-form="lg" data-title="Request To Know Price" data-btn="Send now" data-enquiry="Request Price" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">₹ On Request</a></i>
                                     </td>
                                     <td>
-                                        <button class="btn btn-sm btn-info effetGradient effectScale enqModal" data-form="lg" data-title="Send me costing details" data-btn="Send now" data-enquiry="Request Price" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">
-                    Price Breakup
+                                        <button class="btn btn-sm btn-info effetGradient effectScale" id="buttondown9">
+                    View Floor Plan
                   </button>
+                  <div id="myModals9" class="modal">
+                    <div class="modalcontent9">
+                        <span class="close11button" id="close1Button9">&times;</span>
+                        <img id="modalImages9" src="/assets/img/bhk9.jpg" alt="Full Size Image">
+                    </div>
+                  </div>
                                     </td>
 
                             </tr>
                             <tr>
                                 <td class="border border-left-0 border-top-0 border-bottom-0 price-type">SIMPLEX - 4BHK-6T-U-T
                                     <td class="border border-left-0 border-top-0 border-bottom-0 price-carpet">5224.84 Sq. Ft.<small class="d-inline-block d-md-none"></small></td>
-                                    <td class="price-amt"><i class="mi "></i>₹ On Request</i>
+                                    <td class="price-amt"><i class="mi "></i><a  class="enqModal" style="color: #000;" href="#"data-form="lg" data-title="Request To Know Price" data-btn="Send now" data-enquiry="Request Price" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">₹ On Request</a></i>
                                     </td>
                                     <td>
-                                        <button class="btn btn-sm btn-info effetGradient effectScale enqModal" data-form="lg" data-title="Send me costing details" data-btn="Send now" data-enquiry="Request Price" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">
-                    Price Breakup
+                                        <button class="btn btn-sm btn-info effetGradient effectScale enqModal" id="buttondown10">
+                    View Floor Plan
                   </button>
+                  <div id="myModals10" class="modal">
+                    <div class="modalcontent10">
+                        <span class="close11button" id="close1Button10">&times;</span>
+                        <img id="modalImages10" src="/assets/img/bhk10.jpg" alt="Full Size Image">
+                    </div>
+                  </div>
                                     </td>
 
                             </tr>
                             <tr>
                                 <td class="border border-left-0 border-top-0 border-bottom-0 price-type">SIMPLEX - 4BHK-5T-S-U-T
                                     <td class="border border-left-0 border-top-0 border-bottom-0 price-carpet">3842.88 Sq. Ft.<small class="d-inline-block d-md-none"></small></td>
-                                    <td class="price-amt"><i class="mi "></i>₹ On Request</i>
+                                    <td class="price-amt"><i class="mi "></i><a  class="enqModal" style="color: #000;" href="#"data-form="lg" data-title="Request To Know Price" data-btn="Send now" data-enquiry="Request Price" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">₹ On Request</a></i>
                                     </td>
                                     <td>
-                                        <button class="btn btn-sm btn-info effetGradient effectScale enqModal" data-form="lg" data-title="Send me costing details" data-btn="Send now" data-enquiry="Request Price" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">
-                    Price Breakup
+                                        <button class="btn btn-sm btn-info effetGradient effectScale" id="buttondown11">
+                    View Floor Plan
                   </button>
+                  <div id="myModals11" class="modal">
+                    <div class="modalcontent11">
+                        <span class="close11button" id="close1Button11">&times;</span>
+                        <img id="modalImages11" src="/assets/img/bhk11.jpg" alt="Full Size Image">
+                    </div>
+                  </div>
                                     </td>
 
                             </tr>
                             <tr>
                                 <td class="border border-left-0 border-top-0 border-bottom-0 price-type">SIMPLEX - 4BHK-5T-S-U-T
                                     <td class="border border-left-0 border-top-0 border-bottom-0 price-carpet">4260.16 Sq. Ft.<small class="d-inline-block d-md-none"></small></td>
-                                    <td class="price-amt"><i class="mi "></i>₹ On Request</i>
+                                    <td class="price-amt"><i class="mi "></i><a  class="enqModal" style="color: #000;" href="#"data-form="lg" data-title="Request To Know Price" data-btn="Send now" data-enquiry="Request Price" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">₹ On Request</a></i>
                                     </td>
                                     <td>
-                                        <button class="btn btn-sm btn-info effetGradient effectScale enqModal" data-form="lg" data-title="Send me costing details" data-btn="Send now" data-enquiry="Request Price" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">
-                    Price Breakup
+                                        <button class="btn btn-sm btn-info effetGradient effectScale" id="buttondown12">
+                    View Floor Plan
                   </button>
+                  <div id="myModals12" class="modal">
+                    <div class="modalcontent12">
+                        <span class="close11button" id="close1Button12">&times;</span>
+                        <img id="modalImages12" src="/assets/img/bhk12.jpg" alt="Full Size Image">
+                    </div>
+                  </div>
                                     </td>
 
                             </tr>
                             <tr>
                                 <td class="border border-left-0 border-top-0 border-bottom-0 price-type">SIMPLEX - 4BHK-5T-S-U-T
                                     <td class="border border-left-0 border-top-0 border-bottom-0 price-carpet">4388.51 Sq. Ft.<small class="d-inline-block d-md-none"></small></td>
-                                    <td class="price-amt"><i class="mi "></i>₹ On Request</i>
+                                    <td class="price-amt"><i class="mi "></i><a  class="enqModal" style="color: #000;" href="#"data-form="lg" data-title="Request To Know Price" data-btn="Send now" data-enquiry="Request Price" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">₹ On Request</a></i>
                                     </td>
                                     <td>
-                                        <button class="btn btn-sm btn-info effetGradient effectScale enqModal" data-form="lg" data-title="Send me costing details" data-btn="Send now" data-enquiry="Request Price" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">
-                    Price Breakup
+                                        <button class="btn btn-sm btn-info effetGradient effectScale" id="buttondown13">
+                    View Floor Plan
                   </button>
+                  <div id="myModals13" class="modal">
+                    <div class="modalcontent13">
+                        <span class="close11button" id="close1Button13">&times;</span>
+                        <img id="modalImages13" src="/assets/img/bhk13.jpg" alt="Full Size Image">
+                    </div>
+                  </div>
                                     </td>
 
                             </tr>
                             <tr>
                                 <td class="border border-left-0 border-top-0 border-bottom-0 price-type">SIMPLEX - 4BHK-6T-U-T
                                     <td class="border border-left-0 border-top-0 border-bottom-0 price-carpet">4685.01 Sq. Ft.<small class="d-inline-block d-md-none"></small></td>
-                                    <td class="price-amt"><i class="mi "></i>₹ On Request</i>
+                                    <td class="price-amt"><i class="mi "></i><a  class="enqModal" style="color: #000;" href="#"data-form="lg" data-title="Request To Know Price" data-btn="Send now" data-enquiry="Request Price" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">₹ On Request</a></i>
                                     </td>
                                     <td>
-                                        <button class="btn btn-sm btn-info effetGradient effectScale enqModal" data-form="lg" data-title="Send me costing details" data-btn="Send now" data-enquiry="Request Price" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">
-                    Price Breakup
+                                        <button class="btn btn-sm btn-info effetGradient effectScale " id="buttondown14">
+                    View Floor Plan
                   </button>
+                  <div id="myModals14" class="modal">
+                    <div class="modalcontent14">
+                        <span class="close11button" id="close1Button14">&times;</span>
+                        <img id="modalImages14" src="/assets/img/bhk14.jpg" alt="Full Size Image">
+                    </div>
+                  </div>
                                     </td>
 
                             </tr>
                             <tr>
                                 <td class="border border-left-0 border-top-0 border-bottom-0 price-type">SIMPLEX - 4BHK-6T-U-T
                                     <td class="border border-left-0 border-top-0 border-bottom-0 price-carpet">5224.84 Sq. Ft.<small class="d-inline-block d-md-none"></small></td>
-                                    <td class="price-amt"><i class="mi "></i>₹ On Request</i>
+                                    <td class="price-amt"><i class="mi "></i><a  class="enqModal" style="color: #000;" href="#"data-form="lg" data-title="Request To Know Price" data-btn="Send now" data-enquiry="Request Price" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">₹ On Request</a></i>
                                     </td>
                                     <td>
-                                        <button class="btn btn-sm btn-info effetGradient effectScale enqModal" data-form="lg" data-title="Send me costing details" data-btn="Send now" data-enquiry="Request Price" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">
-                    Price Breakup
+                                        <button class="btn btn-sm btn-info effetGradient effectScale " id="buttondown15">
+                    View Floor Plan
                   </button>
+                  <div id="myModals15" class="modal">
+                    <div class="modalcontent15">
+                        <span class="close11button" id="close1Button15">&times;</span>
+                        <img id="modalImages15" src="/assets/img/bhk15.jpg" alt="Full Size Image">
+                    </div>
+                  </div>
                                     </td>
 
                             </tr>
                             <tr>
                                 <td class="border border-left-0 border-top-0 border-bottom-0 price-type">SIMPLEX - 4BHK-6T-U-T
                                     <td class="border border-left-0 border-top-0 border-bottom-0 price-carpet">5266.31 Sq. Ft.<small class="d-inline-block d-md-none"></small></td>
-                                    <td class="price-amt"><i class="mi "></i>₹ On Request</i>
+                                    <td class="price-amt"><i class="mi "></i><a  class="enqModal" style="color: #000;" href="#"data-form="lg" data-title="Request To Know Price" data-btn="Send now" data-enquiry="Request Price" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">₹ On Request</a></i>
                                     </td>
                                     <td>
-                                        <button class="btn btn-sm btn-info effetGradient effectScale enqModal" data-form="lg" data-title="Send me costing details" data-btn="Send now" data-enquiry="Request Price" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">
-                    Price Breakup
+                                        <button class="btn btn-sm btn-info effetGradient effectScale" id="buttondown16">
+                    View Floor Plan
                   </button>
+                  <div id="myModals16" class="modal">
+                    <div class="modalcontent16">
+                        <span class="close11button" id="close1Button16">&times;</span>
+                        <img id="modalImages16" src="/assets/img/bhk16.jpg" alt="Full Size Image">
+                    </div>
+                  </div>
                                     </td>
 
                             </tr>
                             <tr>
                                 <td class="border border-left-0 border-top-0 border-bottom-0 price-type">3BHK-3T
                                     <td class="border border-left-0 border-top-0 border-bottom-0 price-carpet">2122.64 Sq. Ft.<small class="d-inline-block d-md-none"></small></td>
-                                    <td class="price-amt"><i class="mi "></i>3.60Cr Onwards</i>
+                                    <td class="price-amt"><i class="mi "></i><a  class="enqModal" style="color: #000;" href="#"data-form="lg" data-title="Request To Know Price" data-btn="Send now" data-enquiry="Request Price" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">₹ On Request</a></i>
                                     </td>
                                     <td>
-                                        <button class="btn btn-sm btn-info effetGradient effectScale enqModal" data-form="lg" data-title="Send me costing details" data-btn="Send now" data-enquiry="Request Price" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">
-                    Price Breakup
+                                        <button class="btn btn-sm btn-info effetGradient effectScale " id="buttondown17">
+                    View Floor Plan
                   </button>
+                  <div id="myModals17" class="modal">
+                    <div class="modalcontent17">
+                        <span class="close11button" id="close1Button17">&times;</span>
+                        <img id="modalImages17" src="/assets/img/bhk17.jpg" alt="Full Size Image">
+                    </div>
+                  </div>
                                     </td>
 
                             </tr>
                             <tr>
                                 <td class="border border-left-0 border-top-0 border-bottom-0 price-type">3BHK-3T
                                     <td class="border border-left-0 border-top-0 border-bottom-0 price-carpet">2124.18 Sq. Ft.<small class="d-inline-block d-md-none"></small></td>
-                                    <td class="price-amt"><i class="mi "></i>3.60Cr Onwards</i>
+                                    <td class="price-amt"><i class="mi "></i><a  class="enqModal" style="color: #000;" href="#"data-form="lg" data-title="Request To Know Price" data-btn="Send now" data-enquiry="Request Price" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">₹ On Request</a></i>
                                     </td>
                                     <td>
-                                        <button class="btn btn-sm btn-info effetGradient effectScale enqModal" data-form="lg" data-title="Send me costing details" data-btn="Send now" data-enquiry="Request Price" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">
-                    Price Breakup
+                                        <button class="btn btn-sm btn-info effetGradient effectScale " id="buttondown18">
+                    View Floor Plan
                   </button>
+                  <div id="myModals18" class="modal">
+                    <div class="modalcontent18">
+                        <span class="close11button" id="close1Button18">&times;</span>
+                        <img id="modalImages18" src="/assets/img/bhk18.jpg" alt="Full Size Image">
+                    </div>
+                  </div>
                                     </td>
 
                             </tr>
                             <tr>
                                 <td class="border border-left-0 border-top-0 border-bottom-0 price-type">SIMPLEX - 4BHK-4T-U-T
                                     <td class="border border-left-0 border-top-0 border-bottom-0 price-carpet">4001.61 Sq. Ft.<small class="d-inline-block d-md-none"></small></td>
-                                    <td class="price-amt"><i class="mi "></i>₹ On Request</i>
+                                    <td class="price-amt"><i class="mi "></i><a  class="enqModal" style="color: #000;" href="#"data-form="lg" data-title="Request To Know Price" data-btn="Send now" data-enquiry="Request Price" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">₹ On Request</a></i>
                                     </td>
                                     <td>
-                                        <button class="btn btn-sm btn-info effetGradient effectScale enqModal" data-form="lg" data-title="Send me costing details" data-btn="Send now" data-enquiry="Request Price" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">
-                    Price Breakup
+                                        <button class="btn btn-sm btn-info effetGradient effectScale " id="buttondown19">
+                    View Floor Plan
                   </button>
+                  <div id="myModals19" class="modal">
+                    <div class="modalcontent19">
+                        <span class="close11button" id="close1Button19">&times;</span>
+                        <img id="modalImages19" src="/assets/img/bhk19.jpg" alt="Full Size Image">
+                    </div>
+                  </div>
                                     </td>
 
                             </tr>
                             <tr>
                                 <td class="border border-left-0 border-top-0 border-bottom-0 price-type">DUPLEX - 4BHK-6T
                                     <td class="border border-left-0 border-top-0 border-bottom-0 price-carpet">3589.74 Sq. Ft.<small class="d-inline-block d-md-none"></small></td>
-                                    <td class="price-amt"><i class="mi "></i>₹ On Request</i>
+                                    <td class="price-amt"><i class="mi "></i><a  class="enqModal" style="color: #000;" href="#"data-form="lg" data-title="Request To Know Price" data-btn="Send now" data-enquiry="Request Price" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">₹ On Request</a></i>
                                     </td>
                                     <td>
-                                        <button class="btn btn-sm btn-info effetGradient effectScale enqModal" data-form="lg" data-title="Send me costing details" data-btn="Send now" data-enquiry="Request Price" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">
-                    Price Breakup
+                                        <button class="btn btn-sm btn-info effetGradient effectScale" id="buttondown21">
+                    View Floor Plan
                   </button>
+                  <div id="myModals21" class="modal">
+                    <div class="modalcontent21">
+                        <span class="close11button" id="close1Button21">&times;</span>
+                        <img id="modalImages21" src="/assets/img/bhk21.jpg" alt="Full Size Image">
+                    </div>
+                  </div>
                                     </td>
 
                             </tr>
@@ -2504,6 +2635,56 @@
     closeButton.addEventListener('click', () => {
         // Close the modal when the close button is clicked
         modal.style.display = 'none';
+
+        // Remove the class from the body to re-enable scrolling
+        document.body.classList.remove('modal-open');
+    });
+</script>
+<script>
+    const showImageBt = document.getElementById('buttondown');
+    const modals = document.getElementById('myModals');
+    const modalImages = document.getElementById('modalImages');
+    const closeButtons = document.getElementById('close1Button');
+
+    showImageBt.addEventListener('click', () => {
+        // Set the source of the modal image to the full-size image URL
+        modalImages.src = '/assets/img/bhk1.jpg';
+
+        // Display the modal
+        modals.style.display = 'flex';
+
+        // Add a class to the body to prevent scrolling
+        document.body.classList.add('modal-open');
+    });
+
+    closeButtons.addEventListener('click', () => {
+        // Close the modal when the close button is clicked
+        modals.style.display = 'none';
+
+        // Remove the class from the body to re-enable scrolling
+        document.body.classList.remove('modal-open');
+    });
+</script>
+<script>
+    const showImageBt2 = document.getElementById('buttondown2');
+    const modals2 = document.getElementById('myModals2');
+    const modalImages22 = document.getElementById('modalImages2');
+    const closeButtons2 = document.getElementById('close1Button2');
+
+    showImageBt2.addEventListener('click', () => {
+        // Set the source of the modal image to the full-size image URL
+        modalImages22.src = '/assets/img/bhk2.jpg';
+
+        // Display the modal
+        modals2.style.display = 'flex';
+
+        // Add a class to the body to prevent scrolling
+        document.body.classList.add('modal-open');
+    });
+
+    closeButtons2.addEventListener('click', () => {
+        // Close the modal when the close button is clicked
+        modals2.style.display = 'none';
 
         // Remove the class from the body to re-enable scrolling
         document.body.classList.remove('modal-open');
