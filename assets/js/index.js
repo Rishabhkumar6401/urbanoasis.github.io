@@ -416,3 +416,51 @@ const showImageBt3 = document.getElementById('buttondown3');
         document.body.classList.remove('modal-open');
     });
     
+    const showImageBt3b = document.getElementById('buttondown3b');
+    const modals3b = document.getElementById('myModals3b');
+    const modalImages3bb = document.getElementById('modalImages3b');
+    const closeButtons3b = document.getElementById('close1Buttons3b');
+
+    showImageBt3b.addEventListener('click', () => {
+        // Set the source of the modal image to the full-size image URL
+        modalImages3bb.src = '/assets/img/bhk1.jpg';
+
+        // Display the modal
+        modals3b.style.display = 'flex';
+
+        // Add a class to the body to prevent scrolling
+        document.body.classList.add('modal-open');
+    });
+
+    closeButtons3b.addEventListener('click', () => {
+        // Close the modal when the close button is clicked
+        modals3b.style.display = 'none';
+
+        // Remove the class from the body to re-enable scrolling
+        document.body.classList.remove('modal-open');
+    });
+    
+    const showImageBt4b = document.getElementById('buttondown4b');
+    const modals4b = document.getElementById('myModals4b');
+    const modalImages4bb = document.getElementById('modalImages4b');
+    const closeButtons4b = document.getElementById('close1Buttons4b');
+
+    showImageBt4b.addEventListener('click', () => {
+        // Set the source of the modal image to the full-size image URL
+        modalImages4bb.src = '/assets/img/bhk11.jpg';
+
+        // Display the modal
+        modals4b.style.display = 'flex';
+
+        // Add a class to the body to prevent scrolling
+        document.body.classList.add('modal-open');
+    });
+
+    closeButtons4b.addEventListener('click', () => {
+        // Close the modal when the close button is clicked
+        modals4b.style.display = 'none';
+
+        // Remove the class from the body to re-enable scrolling
+        document.body.classList.remove('modal-open');
+    });
+    

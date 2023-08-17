@@ -10699,6 +10699,16 @@ img.ls-blur-up-is-loading {
             /* max-height: 100%; */
             margin: 40px;
         }
+        #modalImages3b {
+            max-width: 37%;
+            /* max-height: 100%; */
+            margin: 40px;
+        }
+        #modalImages4b {
+            max-width: 37%;
+            /* max-height: 100%; */
+            margin: 40px;
+        }
 
         /* Styles for the close button */
         .close11button {
