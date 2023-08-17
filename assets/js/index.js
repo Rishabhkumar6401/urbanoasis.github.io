@@ -5,7 +5,7 @@ const showImageBt3 = document.getElementById('buttondown3');
 
     showImageBt3.addEventListener('click', () => {
         // Set the source of the modal image to the full-size image URL
-        modalImages33.src = '/assets/img/bhk3.jpg';
+        modalImages33.src = 'assets/img/bhk3.jpg';
 
         // Display the modal
         modals3.style.display = 'flex';
@@ -29,7 +29,7 @@ const showImageBt3 = document.getElementById('buttondown3');
 
     showImageBt4.addEventListener('click', () => {
         // Set the source of the modal image to the full-size image URL
-        modalImages44.src = '/assets/img/bhk4.jpg';
+        modalImages44.src = 'assets/img/bhk4.jpg';
 
         // Display the modal
         modals4.style.display = 'flex';
@@ -52,7 +52,7 @@ const showImageBt3 = document.getElementById('buttondown3');
 
     showImageBt5.addEventListener('click', () => {
         // Set the source of the modal image to the full-size image URL
-        modalImages55.src = '/assets/img/bhk5.jpg';
+        modalImages55.src = 'assets/img/bhk5.jpg';
 
         // Display the modal
         modals5.style.display = 'flex';
@@ -76,7 +76,7 @@ const showImageBt3 = document.getElementById('buttondown3');
 
     showImageBt6.addEventListener('click', () => {
         // Set the source of the modal image to the full-size image URL
-        modalImages66.src = '/assets/img/bhk6.jpg';
+        modalImages66.src = 'assets/img/bhk6.jpg';
 
         // Display the modal
         modals6.style.display = 'flex';
@@ -99,7 +99,7 @@ const showImageBt3 = document.getElementById('buttondown3');
 
     showImageBt7.addEventListener('click', () => {
         // Set the source of the modal image to the full-size image URL
-        modalImages77.src = '/assets/img/bhk6.jpg';
+        modalImages77.src = 'assets/img/bhk6.jpg';
 
         // Display the modal
         modals7.style.display = 'flex';
@@ -122,7 +122,7 @@ const showImageBt3 = document.getElementById('buttondown3');
 
     showImageBt8.addEventListener('click', () => {
         // Set the source of the modal image to the full-size image URL
-        modalImages88.src = '/assets/img/bhk6.jpg';
+        modalImages88.src = 'assets/img/bhk6.jpg';
 
         // Display the modal
         modals8.style.display = 'flex';
@@ -145,7 +145,7 @@ const showImageBt3 = document.getElementById('buttondown3');
 
     showImageBt9.addEventListener('click', () => {
         // Set the source of the modal image to the full-size image URL
-        modalImages99.src = '/assets/img/bhk9.jpg';
+        modalImages99.src = 'assets/img/bhk9.jpg';
 
         // Display the modal
         modals9.style.display = 'flex';
@@ -168,7 +168,7 @@ const showImageBt3 = document.getElementById('buttondown3');
 
     showImageBt10.addEventListener('click', () => {
         // Set the source of the modal image to the full-size image URL
-        modalImages10.src = '/assets/img/bhk10.jpg';
+        modalImages10.src = 'assets/img/bhk10.jpg';
 
         // Display the modal
         modals10.style.display = 'flex';
@@ -191,7 +191,7 @@ const showImageBt3 = document.getElementById('buttondown3');
 
     showImageBt11.addEventListener('click', () => {
         // Set the source of the modal image to the full-size image URL
-        modalImages111.src = '/assets/img/bhk11.jpg';
+        modalImages111.src = 'assets/img/bhk11.jpg';
 
         // Display the modal
         modals11.style.display = 'flex';
@@ -214,7 +214,7 @@ const showImageBt3 = document.getElementById('buttondown3');
 
     showImageBt13.addEventListener('click', () => {
         // Set the source of the modal image to the full-size image URL
-        modalImages113.src = '/assets/img/bhk13.jpg';
+        modalImages113.src = 'assets/img/bhk13.jpg';
 
         // Display the modal
         modals13.style.display = 'flex';
@@ -237,7 +237,7 @@ const showImageBt3 = document.getElementById('buttondown3');
 
     showImageBt12.addEventListener('click', () => {
         // Set the source of the modal image to the full-size image URL
-        modalImages112.src = '/assets/img/bhk12.jpg';
+        modalImages112.src = 'assets/img/bhk12.jpg';
 
         // Display the modal
         modals12.style.display = 'flex';
@@ -260,7 +260,7 @@ const showImageBt3 = document.getElementById('buttondown3');
 
     showImageBt14.addEventListener('click', () => {
         // Set the source of the modal image to the full-size image URL
-        modalImages114.src = '/assets/img/bhk14.jpg';
+        modalImages114.src = 'assets/img/bhk14.jpg';
 
         // Display the modal
         modals14.style.display = 'flex';
@@ -283,7 +283,7 @@ const showImageBt3 = document.getElementById('buttondown3');
 
     showImageBt15.addEventListener('click', () => {
         // Set the source of the modal image to the full-size image URL
-        modalImages115.src = '/assets/img/bhk20.jpg';
+        modalImages115.src = 'assets/img/bhk20.jpg';
 
         // Display the modal
         modals15.style.display = 'flex';
@@ -306,7 +306,7 @@ const showImageBt3 = document.getElementById('buttondown3');
 
     showImageBt16.addEventListener('click', () => {
         // Set the source of the modal image to the full-size image URL
-        modalImages116.src = '/assets/img/bhk16.jpg';
+        modalImages116.src = 'assets/img/bhk16.jpg';
 
         // Display the modal
         modals16.style.display = 'flex';
@@ -329,7 +329,7 @@ const showImageBt3 = document.getElementById('buttondown3');
 
     showImageBt17.addEventListener('click', () => {
         // Set the source of the modal image to the full-size image URL
-        modalImages117.src = '/assets/img/bhk17.jpg';
+        modalImages117.src = 'assets/img/bhk17.jpg';
 
         // Display the modal
         modals17.style.display = 'flex';
@@ -352,7 +352,7 @@ const showImageBt3 = document.getElementById('buttondown3');
 
     showImageBt19.addEventListener('click', () => {
         // Set the source of the modal image to the full-size image URL
-        modalImages119.src = '/assets/img/bhk19.jpg';
+        modalImages119.src = 'assets/img/bhk19.jpg';
 
         // Display the modal
         modals19.style.display = 'flex';
@@ -375,7 +375,7 @@ const showImageBt3 = document.getElementById('buttondown3');
 
     showImageBt18.addEventListener('click', () => {
         // Set the source of the modal image to the full-size image URL
-        modalImages118.src = '/assets/img/bhk18.jpg';
+        modalImages118.src = 'assets/img/bhk18.jpg';
 
         // Display the modal
         modals18.style.display = 'flex';
@@ -399,7 +399,7 @@ const showImageBt3 = document.getElementById('buttondown3');
 
     showImageBt21.addEventListener('click', () => {
         // Set the source of the modal image to the full-size image URL
-        modalImages211.src = '/assets/img/bhk6.jpg';
+        modalImages211.src = 'assets/img/bhk6.jpg';
 
         // Display the modal
         modals21.style.display = 'flex';
@@ -423,7 +423,7 @@ const showImageBt3 = document.getElementById('buttondown3');
 
     showImageBt3b.addEventListener('click', () => {
         // Set the source of the modal image to the full-size image URL
-        modalImages3bb.src = '/assets/img/bhk1.jpg';
+        modalImages3bb.src = 'assets/img/bhk1.jpg';
 
         // Display the modal
         modals3b.style.display = 'flex';
@@ -447,7 +447,7 @@ const showImageBt3 = document.getElementById('buttondown3');
 
     showImageBt4b.addEventListener('click', () => {
         // Set the source of the modal image to the full-size image URL
-        modalImages4bb.src = '/assets/img/bhk11.jpg';
+        modalImages4bb.src = 'assets/img/bhk11.jpg';
 
         // Display the modal
         modals4b.style.display = 'flex';
