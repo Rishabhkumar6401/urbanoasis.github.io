@@ -283,7 +283,7 @@
                         <a class="nav-link" href="#sitevisit"><i class="mi mi-sitevisit nav-icon"></i> Virtual Site Tour</a>
                     </li>
                     <li class="nav-item overflow-hidden">
-                        <a class="nav-link enqModal" href="#" data-form="md" data-title="Download brochure" data-btn="Download now" data-enquiry="Ebook Download" data-redirect="brochure" data-redirect-file="brochure.pdf" data-toggle="modal" data-target="#enqModal">
+                        <a class="nav-link enqModal" id="downloadBtn"  data-form="md" data-title="Download brochure" data-btn="Download now" data-enquiry="Ebook Download" data-redirect="brochure" data-redirect-file="brochure.pdf" data-toggle="modal" data-target="#enqModal">
               <i class="mi mi-download nav-icon d-inline-block animated slideInDown infinite"></i>
               Brochure
             </a>
@@ -403,7 +403,7 @@
         4 Cr* <small style="font-size:18px;font-weight: 700;">Onwards</small></span>
                     <!--<span class="pro-price">Starting Price <small></small></span>-->
                     <!--<span class="pro-price"> AED 700, 888* Onwards <small></small></span>-->
-                    <button class="btn btn-info micro-form-btn enqModal effetMoveGradient effectScale" data-form="lg" data-title="Download Brochure" data-btn="Send now" data-enquiry="Enquire Now" data-redirect="enquiry" data-toggle="modal" data-target="#enqModal">Download Brochure</button>
+                    <button class="btn btn-info micro-form-btn enqModal effetMoveGradient effectScale" id="downloadBtnpdf" data-form="lg" data-title="Download Brochure" data-btn="Send now" data-enquiry="Enquire Now" data-redirect="enquiry" data-toggle="modal" data-target="#enqModal">Download Brochure</button>
                     <span class="pro-rera">
         <!-- <span class="heading">RERA No</span> : Coming Soon</span> -->
         </div>
@@ -727,7 +727,7 @@
 
             </p>
 
-            <button class="btn btn-sm btn-outline-info sectio-bro-btn overflow-hidden enqModal" data-form="md" data-title="Download brochure" data-btn="Download now" data-enquiry="Ebook Download" data-redirect="brochure" data-redirect-file="brochure.pdf" data-toggle="modal"
+            <button class="btn btn-sm btn-outline-info sectio-bro-btn overflow-hidden enqModal" id="downloadBtnpd"  data-form="md" data-title="Download brochure" data-btn="Download now" data-enquiry="Ebook Download" data-redirect="brochure" data-redirect-file="brochure.pdf" data-toggle="modal"
                 data-target="#enqModal">
         <span class="d-inline-block mi mi-download mr-1 animated slideInDown infinite"></span>
         Download Brochure
@@ -779,9 +779,9 @@
               </tr> -->
 
                             <tr>
-                                <td class="border border-left-0 border-top-0 border-bottom-0 price-type">3 BHK
-                                    <td class="border border-left-0 border-top-0 border-bottom-0 price-carpet">2400 Sq. Ft.<small class="d-inline-block d-md-none"></small></td>
-                                    <td class="price-amt"><i class="mi "></i>₹ On Request</i>
+                                <td class="border border-left-0 border-top-0 border-bottom-0 price-type">3BHK-3T-U-T
+                                    <td class="border border-left-0 border-top-0 border-bottom-0 price-carpet">2262.66 Sq. Ft.<small class="d-inline-block d-md-none"></small></td>
+                                    <td class="price-amt"><i class="mi "></i>3.85Cr Onwards</i>
                                     </td>
                                     <td>
                                         <button class="btn btn-sm btn-info effetGradient effectScale enqModal" data-form="lg" data-title="Send me costing details" data-btn="Send now" data-enquiry="Request Price" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">
@@ -792,8 +792,224 @@
 
 
                             <tr>
-                                <td class="border border-left-0 border-top-0 border-bottom-0 price-type">4 BHK
-                                    <td class="border border-left-0 border-top-0 border-bottom-0 price-carpet">3000 Sq. Ft.<small class="d-inline-block d-md-none"></small></td>
+                                <td class="border border-left-0 border-top-0 border-bottom-0 price-type">3BHK-3T-U-T
+                                    <td class="border border-left-0 border-top-0 border-bottom-0 price-carpet">2266.44 Sq. Ft.<small class="d-inline-block d-md-none"></small></td>
+                                    <td class="price-amt"><i class="mi "></i>3.85Cr Onwards</i>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-sm btn-info effetGradient effectScale enqModal" data-form="lg" data-title="Send me costing details" data-btn="Send now" data-enquiry="Request Price" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">
+                    Price Breakup
+                  </button>
+                                    </td>
+
+                            </tr>
+                            <tr>
+                                <td class="border border-left-0 border-top-0 border-bottom-0 price-type">3BHK-3T-U-T
+                                    <td class="border border-left-0 border-top-0 border-bottom-0 price-carpet">2410.23 Sq. Ft.<small class="d-inline-block d-md-none"></small></td>
+                                    <td class="price-amt"><i class="mi "></i>3.85Cr Onwards</i>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-sm btn-info effetGradient effectScale enqModal" data-form="lg" data-title="Send me costing details" data-btn="Send now" data-enquiry="Request Price" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">
+                    Price Breakup
+                  </button>
+                                    </td>
+
+                            </tr>
+                            <tr>
+                                <td class="border border-left-0 border-top-0 border-bottom-0 price-type">4BHK-4T-S-T
+                                    <td class="border border-left-0 border-top-0 border-bottom-0 price-carpet">3039.87 Sq. Ft.<small class="d-inline-block d-md-none"></small></td>
+                                    <td class="price-amt"><i class="mi "></i>5.10Cr Onwards</i>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-sm btn-info effetGradient effectScale enqModal" data-form="lg" data-title="Send me costing details" data-btn="Send now" data-enquiry="Request Price" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">
+                    Price Breakup
+                  </button>
+                                    </td>
+
+                            </tr>
+                            <tr>
+                                <td class="border border-left-0 border-top-0 border-bottom-0 price-type">SIMPLEX - 4BHK-4T-S-U-T
+                                    <td class="border border-left-0 border-top-0 border-bottom-0 price-carpet">3842.88 Sq. Ft.<small class="d-inline-block d-md-none"></small></td>
+                                    <td class="price-amt"><i class="mi "></i>₹ On Request</i>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-sm btn-info effetGradient effectScale enqModal" data-form="lg" data-title="Send me costing details" data-btn="Send now" data-enquiry="Request Price" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">
+                    Price Breakup
+                  </button>
+                                    </td>
+
+                            </tr>
+                            <tr>
+                                <td class="border border-left-0 border-top-0 border-bottom-0 price-type">SIMPLEX - 4BHK-4T-S-U-T
+                                    <td class="border border-left-0 border-top-0 border-bottom-0 price-carpet">4260.16 Sq. Ft.<small class="d-inline-block d-md-none"></small></td>
+                                    <td class="price-amt"><i class="mi "></i>₹ On Request</i>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-sm btn-info effetGradient effectScale enqModal" data-form="lg" data-title="Send me costing details" data-btn="Send now" data-enquiry="Request Price" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">
+                    Price Breakup
+                  </button>
+                                    </td>
+
+                            </tr>
+                            <tr>
+                                <td class="border border-left-0 border-top-0 border-bottom-0 price-type">SIMPLEX - 4BHK-4T-STUDY-U-T
+                                    <td class="border border-left-0 border-top-0 border-bottom-0 price-carpet">4388.49 Sq. Ft.<small class="d-inline-block d-md-none"></small></td>
+                                    <td class="price-amt"><i class="mi "></i>₹ On Request</i>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-sm btn-info effetGradient effectScale enqModal" data-form="lg" data-title="Send me costing details" data-btn="Send now" data-enquiry="Request Price" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">
+                    Price Breakup
+                  </button>
+                                    </td>
+
+                            </tr>
+                            <tr>
+                                <td class="border border-left-0 border-top-0 border-bottom-0 price-type">SIMPLEX - 3BHK-5T-U-T
+                                    <td class="border border-left-0 border-top-0 border-bottom-0 price-carpet">4770.63 Sq. Ft.<small class="d-inline-block d-md-none"></small></td>
+                                    <td class="price-amt"><i class="mi "></i>₹ On Request</i>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-sm btn-info effetGradient effectScale enqModal" data-form="lg" data-title="Send me costing details" data-btn="Send now" data-enquiry="Request Price" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">
+                    Price Breakup
+                  </button>
+                                    </td>
+
+                            </tr>
+                            <tr>
+                                <td class="border border-left-0 border-top-0 border-bottom-0 price-type">SIMPLEX - 4BHK-6T-U-T
+                                    <td class="border border-left-0 border-top-0 border-bottom-0 price-carpet">4685.01 Sq. Ft.<small class="d-inline-block d-md-none"></small></td>
+                                    <td class="price-amt"><i class="mi "></i>₹ On Request</i>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-sm btn-info effetGradient effectScale enqModal" data-form="lg" data-title="Send me costing details" data-btn="Send now" data-enquiry="Request Price" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">
+                    Price Breakup
+                  </button>
+                                    </td>
+
+                            </tr>
+                            <tr>
+                                <td class="border border-left-0 border-top-0 border-bottom-0 price-type">SIMPLEX - 4BHK-6T-U-T
+                                    <td class="border border-left-0 border-top-0 border-bottom-0 price-carpet">5224.84 Sq. Ft.<small class="d-inline-block d-md-none"></small></td>
+                                    <td class="price-amt"><i class="mi "></i>₹ On Request</i>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-sm btn-info effetGradient effectScale enqModal" data-form="lg" data-title="Send me costing details" data-btn="Send now" data-enquiry="Request Price" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">
+                    Price Breakup
+                  </button>
+                                    </td>
+
+                            </tr>
+                            <tr>
+                                <td class="border border-left-0 border-top-0 border-bottom-0 price-type">SIMPLEX - 4BHK-5T-S-U-T
+                                    <td class="border border-left-0 border-top-0 border-bottom-0 price-carpet">3842.88 Sq. Ft.<small class="d-inline-block d-md-none"></small></td>
+                                    <td class="price-amt"><i class="mi "></i>₹ On Request</i>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-sm btn-info effetGradient effectScale enqModal" data-form="lg" data-title="Send me costing details" data-btn="Send now" data-enquiry="Request Price" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">
+                    Price Breakup
+                  </button>
+                                    </td>
+
+                            </tr>
+                            <tr>
+                                <td class="border border-left-0 border-top-0 border-bottom-0 price-type">SIMPLEX - 4BHK-5T-S-U-T
+                                    <td class="border border-left-0 border-top-0 border-bottom-0 price-carpet">4260.16 Sq. Ft.<small class="d-inline-block d-md-none"></small></td>
+                                    <td class="price-amt"><i class="mi "></i>₹ On Request</i>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-sm btn-info effetGradient effectScale enqModal" data-form="lg" data-title="Send me costing details" data-btn="Send now" data-enquiry="Request Price" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">
+                    Price Breakup
+                  </button>
+                                    </td>
+
+                            </tr>
+                            <tr>
+                                <td class="border border-left-0 border-top-0 border-bottom-0 price-type">SIMPLEX - 4BHK-5T-S-U-T
+                                    <td class="border border-left-0 border-top-0 border-bottom-0 price-carpet">4388.51 Sq. Ft.<small class="d-inline-block d-md-none"></small></td>
+                                    <td class="price-amt"><i class="mi "></i>₹ On Request</i>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-sm btn-info effetGradient effectScale enqModal" data-form="lg" data-title="Send me costing details" data-btn="Send now" data-enquiry="Request Price" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">
+                    Price Breakup
+                  </button>
+                                    </td>
+
+                            </tr>
+                            <tr>
+                                <td class="border border-left-0 border-top-0 border-bottom-0 price-type">SIMPLEX - 4BHK-6T-U-T
+                                    <td class="border border-left-0 border-top-0 border-bottom-0 price-carpet">4685.01 Sq. Ft.<small class="d-inline-block d-md-none"></small></td>
+                                    <td class="price-amt"><i class="mi "></i>₹ On Request</i>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-sm btn-info effetGradient effectScale enqModal" data-form="lg" data-title="Send me costing details" data-btn="Send now" data-enquiry="Request Price" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">
+                    Price Breakup
+                  </button>
+                                    </td>
+
+                            </tr>
+                            <tr>
+                                <td class="border border-left-0 border-top-0 border-bottom-0 price-type">SIMPLEX - 4BHK-6T-U-T
+                                    <td class="border border-left-0 border-top-0 border-bottom-0 price-carpet">5224.84 Sq. Ft.<small class="d-inline-block d-md-none"></small></td>
+                                    <td class="price-amt"><i class="mi "></i>₹ On Request</i>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-sm btn-info effetGradient effectScale enqModal" data-form="lg" data-title="Send me costing details" data-btn="Send now" data-enquiry="Request Price" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">
+                    Price Breakup
+                  </button>
+                                    </td>
+
+                            </tr>
+                            <tr>
+                                <td class="border border-left-0 border-top-0 border-bottom-0 price-type">SIMPLEX - 4BHK-6T-U-T
+                                    <td class="border border-left-0 border-top-0 border-bottom-0 price-carpet">5266.31 Sq. Ft.<small class="d-inline-block d-md-none"></small></td>
+                                    <td class="price-amt"><i class="mi "></i>₹ On Request</i>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-sm btn-info effetGradient effectScale enqModal" data-form="lg" data-title="Send me costing details" data-btn="Send now" data-enquiry="Request Price" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">
+                    Price Breakup
+                  </button>
+                                    </td>
+
+                            </tr>
+                            <tr>
+                                <td class="border border-left-0 border-top-0 border-bottom-0 price-type">3BHK-3T
+                                    <td class="border border-left-0 border-top-0 border-bottom-0 price-carpet">2122.64 Sq. Ft.<small class="d-inline-block d-md-none"></small></td>
+                                    <td class="price-amt"><i class="mi "></i>3.60Cr Onwards</i>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-sm btn-info effetGradient effectScale enqModal" data-form="lg" data-title="Send me costing details" data-btn="Send now" data-enquiry="Request Price" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">
+                    Price Breakup
+                  </button>
+                                    </td>
+
+                            </tr>
+                            <tr>
+                                <td class="border border-left-0 border-top-0 border-bottom-0 price-type">3BHK-3T
+                                    <td class="border border-left-0 border-top-0 border-bottom-0 price-carpet">2124.18 Sq. Ft.<small class="d-inline-block d-md-none"></small></td>
+                                    <td class="price-amt"><i class="mi "></i>3.60Cr Onwards</i>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-sm btn-info effetGradient effectScale enqModal" data-form="lg" data-title="Send me costing details" data-btn="Send now" data-enquiry="Request Price" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">
+                    Price Breakup
+                  </button>
+                                    </td>
+
+                            </tr>
+                            <tr>
+                                <td class="border border-left-0 border-top-0 border-bottom-0 price-type">SIMPLEX - 4BHK-4T-U-T
+                                    <td class="border border-left-0 border-top-0 border-bottom-0 price-carpet">4001.61 Sq. Ft.<small class="d-inline-block d-md-none"></small></td>
+                                    <td class="price-amt"><i class="mi "></i>₹ On Request</i>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-sm btn-info effetGradient effectScale enqModal" data-form="lg" data-title="Send me costing details" data-btn="Send now" data-enquiry="Request Price" data-redirect="floorplan" data-toggle="modal" data-target="#enqModal">
+                    Price Breakup
+                  </button>
+                                    </td>
+
+                            </tr>
+                            <tr>
+                                <td class="border border-left-0 border-top-0 border-bottom-0 price-type">DUPLEX - 4BHK-6T
+                                    <td class="border border-left-0 border-top-0 border-bottom-0 price-carpet">3589.74 Sq. Ft.<small class="d-inline-block d-md-none"></small></td>
                                     <td class="price-amt"><i class="mi "></i>₹ On Request</i>
                                     </td>
                                     <td>
@@ -1000,16 +1216,23 @@
             <span class="d-block section-heading-sub text-capitalize">Site & Floor Plan</span>
             <div class="row row-cols-1 row-cols-md-4">
                 <div class="col-md-4">
-                    <a href="#" class="text-decoration-none enqModal" data-form="lg" data-title="Send me plan details" data-btn="Send now" data-enquiry="Floor Plan" data-redirect="Enquiry" data-toggle="modal" data-target="#enqModal">
+                    <a  class="text-decoration-none enqModal" >
                         <div class="at-property-item shadow-sm border border-grey mt-1">
                             <div class="at-property-img lazyloaded" data-expand="-1">
                                 <picture>
                                     <source class="floor-plan-img blur lazyloading" data-srcset="assets/img/master.jpg" type="image/jpg" sizes="222px" srcset="assets/img/master.jpg" />
-                                    <img data-sizes="auto" class="floor-plan-img blur lazyautosizes ls-is-cached lazyloaded ls-inview" data-srcset="assets/img/master.jpg" sizes="222px" srcset="assets/img/master.jpg" />
+                                    <img data-sizes="auto" class="floor-plan-img  lazyautosizes ls-is-cached lazyloaded ls-inview" data-srcset="assets/img/master.jpg" sizes="222px" srcset="assets/img/master.jpg" />
                                 </picture>
                                 <div class="at-property-overlayer"></div>
-                                <span class="btn btn-default at-property-btn" role="button">Enquire Now</span>
+                                <span class="btn btn-default at-property-btn" id="showImageBtn" role="button">See</span>
+                                <div id="myModal" class="modal">
+                                    <div class="modal-content">
+                                        <span class="close11button" id="close11Button">&times;</span>
+                                        <img id="modalImage" src="/assets/img/master.jpg" alt="Full Size Image">
+                                    </div>
+                                </div>
                             </div>
+
                             <div class="at-property-dis effetGradient">
                                 <h5>Master Plan</h5>
                             </div>
@@ -1157,12 +1380,56 @@
                         <div class="owl-item active" style="width: 454.445px; margin-right: 20px;">
                             <div class="item-wrp">
                                 <div data-expand="-1" class="lazyloaded">
-                                    <img data-src="./assets/img/amenities/lobby.svg" class="lazyloaded" src="assets/img/amenities/kids.JPG" />
-                                    <p>Kids Play Area</p>
+                                    <img data-src="./assets/img/amenities/lobby.svg" class="lazyloaded" src="assets/img/amenities/arrival.svg" />
+                                    <p> Arrival forecourt</p>
                                 </div>
                                 <div data-expand="-1" class="lazyloaded">
-                                    <img data-src="./assets/img/amenities/playground.png?1646759026" class="lazyloaded" src="assets/img/amenities/joging.JPG" />
-                                    <p>Jogging Track</p>
+                                    <img data-src="./assets/img/amenities/lobby.svg" class="lazyloaded" src="assets/img/amenities/jogging.svg" />
+                                    <p> Jogging Track</p>
+                                </div>
+                                <div data-expand="-1" class="lazyloaded">
+                                    <img data-src="./assets/img/amenities/lobby.svg" class="lazyloaded" src="assets/img/amenities/treehouse.svg" />
+                                    <p>Tree plaza</p>
+                                </div>
+                                <div data-expand="-1" class="lazyloaded">
+                                    <img data-src="./assets/img/amenities/playground.png?1646759026" class="lazyloaded" src="assets/img/amenities/vehicular.svg" />
+                                    <p>Vehicular transition plaza</p>
+                                </div>
+                                <div data-expand="-1" class="lazyloaded">
+                                    <img data-src="./assets/img/amenities/playground.png?1646759026" class="lazyloaded" src="assets/img/amenities/tower.svg" />
+                                    <p>Tower Drop-off</p>
+                                </div>
+                                <div data-expand="-1" class="lazyloaded">
+                                    <img data-src="./assets/img/amenities/playground.png?1646759026" class="lazyloaded" src="assets/img/amenities/club.svg" />
+                                    <p>Club Drop-off</p>
+                                </div>
+                                <div data-expand="-1" class="lazyloaded">
+                                    <img data-src="./assets/img/amenities/playground.png?1646759026" class="lazyloaded" src="assets/img/amenities/pool.svg" />
+                                    <p>Pool Deck</p>
+                                </div>
+                                <div data-expand="-1" class="lazyloaded">
+                                    <img data-src="./assets/img/amenities/playground.png?1646759026" class="lazyloaded" src="assets/img/amenities/swing.JPG" />
+                                    <p>Kids’ pool</p>
+                                </div>
+                                <div data-expand="-1" class="lazyloaded">
+                                    <img data-src="./assets/img/amenities/playground.png?1646759026" class="lazyloaded" src="assets/img/amenities/pool.svg" />
+                                    <p>Adult pool</p>
+                                </div>
+                                <div data-expand="-1" class="lazyloaded">
+                                    <img data-src="./assets/img/amenities/playground.png?1646759026" class="lazyloaded" src="assets/img/amenities/lilly.svg" />
+                                    <p>Lily Pond</p>
+                                </div>
+                                <div data-expand="-1" class="lazyloaded">
+                                    <img data-src="./assets/img/amenities/playground.png?1646759026" class="lazyloaded" src="assets/img/amenities/Banquet.svg" />
+                                    <p>Banquet Lawn</p>
+                                </div>
+                                <div data-expand="-1" class="lazyloaded">
+                                    <img data-src="./assets/img/amenities/playground.png?1646759026" class="lazyloaded" src="assets/img/amenities/playcourt.svg" />
+                                    <p>Multi-purpose Playcourt</p>
+                                </div>
+                                <div data-expand="-1" class="lazyloaded">
+                                    <img data-src="./assets/img/amenities/playground.png?1646759026" class="lazyloaded" src="assets/img/amenities/teenage.svg" />
+                                    <p>Teenage Interaction Zone</p>
                                 </div>
                                 <div data-expand="-1" class="lazyloaded">
                                     <img data-src="./assets/img/amenities/cri1.JPG" class="lazyloaded" src="assets/img/amenities/cri1.JPG" />
@@ -1172,6 +1439,46 @@
                         </div>
                         <div class="owl-item active" style="width: 454.445px; margin-right: 20px;">
                             <div class="item-wrp">
+                                <div data-expand="-1" class="lazyloaded">
+                                    <img data-src="./assets/img/amenities/swimming-pool.png?1646759078" class="lazyloaded" src="assets/img/amenities/axial.svg" />
+                                    <p>Axial Promenade</p>
+                                </div>
+                                <div data-expand="-1" class="lazyloaded">
+                                    <img data-src="./assets/img/amenities/swimming-pool.png?1646759078" class="lazyloaded" src="assets/img/amenities/amphitheatre.svg" />
+                                    <p>Amphitheatre</p>
+                                </div>
+                                <div data-expand="-1" class="lazyloaded">
+                                    <img data-src="./assets/img/amenities/swimming-pool.png?1646759078" class="lazyloaded" src="assets/img/amenities/wall.svg" />
+                                    <p>Feature Wall</p>
+                                </div>
+                                <div data-expand="-1" class="lazyloaded">
+                                    <img data-src="./assets/img/amenities/swimming-pool.png?1646759078" class="lazyloaded" src="assets/img/amenities/kidsplay.svg" />
+                                    <p>Kids’ play area</p>
+                                </div>
+                                <div data-expand="-1" class="lazyloaded">
+                                    <img data-src="./assets/img/amenities/swimming-pool.png?1646759078" class="lazyloaded" src="assets/img/amenities/yoga.svg" />
+                                    <p>Yoga Area</p>
+                                </div>
+                                <div data-expand="-1" class="lazyloaded">
+                                    <img data-src="./assets/img/amenities/swimming-pool.png?1646759078" class="lazyloaded" src="assets/img/amenities/elderly.svg" />
+                                    <p>Elderly interaction zone</p>
+                                </div>
+                                <div data-expand="-1" class="lazyloaded">
+                                    <img data-src="./assets/img/amenities/swimming-pool.png?1646759078" class="lazyloaded" src="assets/img/amenities/lawn.svg" />
+                                    <p>Community Lawn</p>
+                                </div>
+                                <div data-expand="-1" class="lazyloaded">
+                                    <img data-src="./assets/img/amenities/swimming-pool.png?1646759078" class="lazyloaded" src="assets/img/amenities/ramp.svg" />
+                                    <p>Ramp</p>
+                                </div>
+                                <div data-expand="-1" class="lazyloaded">
+                                    <img data-src="./assets/img/amenities/swimming-pool.png?1646759078" class="lazyloaded" src="assets/img/amenities/club.svg" />
+                                    <p>Club</p>
+                                </div>
+                                <div data-expand="-1" class="lazyloaded">
+                                    <img data-src="./assets/img/amenities/swimming-pool.png?1646759078" class="lazyloaded" src="assets/img/amenities/parking.svg" />
+                                    <p>Open/PH Parking</p>
+                                </div>
                                 <div data-expand="-1" class="lazyloaded">
                                     <img data-src="./assets/img/amenities/swimming-pool.png?1646759078" class="lazyloaded" src="assets/img/amenities/swing.JPG" />
                                     <p>Swimming Pools</p>
@@ -1734,7 +2041,7 @@
             <li class="nav-item" onclick="javascript:location.href='tel:+919999156255'">
                 <span class="mi mi-call action-icon"></span> Call
             </li>
-            <li class="nav-item enqModal" data-form="lg" data-title="Download Brochure" data-btn="Send now" data-enquiry="Enquire Now" data-redirect="enquiry" data-toggle="modal" data-target="#enqModal">
+            <li class="nav-item enqModal" id="downloadBtn" data-form="lg" data-title="Download Brochure" data-btn="Send now" data-enquiry="Enquire Now" data-redirect="enquiry" data-toggle="modal" data-target="#enqModal">
                 <span class="mi mi-enquire action-icon"></span> Enquire
             </li>
 
@@ -2123,7 +2430,85 @@
             changeMobileInput("phone3", "country-code-3");
         });
     </script>
+    <script>
+        const downloadButt = document.getElementById('downloadBtn');
 
+        downloadButt.addEventListener('click', () => {
+            // Create a new anchor element
+            const link = document.createElement('a');
+
+            // Set the href attribute to the URL of the PDF file
+            link.href = './assets/img/brochure.pdf';
+
+            // Set the download attribute to specify the desired filename for the downloaded file
+            link.download = 'brochure.pdf';
+
+            // Programmatically trigger a click event on the anchor element
+            // This will prompt the browser to download the linked file
+            link.click();
+        });
+    </script>
+    <script>
+        const downloadButto = document.getElementById('downloadBtnpd');
+
+        downloadButto.addEventListener('click', () => {
+            // Create a new anchor element
+            const link = document.createElement('a');
+
+            // Set the href attribute to the URL of the PDF file
+            link.href = './assets/img/brochure.pdf';
+
+            // Set the download attribute to specify the desired filename for the downloaded file
+            link.download = 'brochure.pdf';
+
+            // Programmatically trigger a click event on the anchor element
+            // This will prompt the browser to download the linked file
+            link.click();
+        });
+    </script>
+    <script>
+        const downloadButton = document.getElementById('downloadBtnpdf');
+
+        downloadButton.addEventListener('click', () => {
+            // Create a new anchor element
+            const link = document.createElement('a');
+
+            // Set the href attribute to the URL of the PDF file
+            link.href = './assets/img/brochure.pdf';
+
+            // Set the download attribute to specify the desired filename for the downloaded file
+            link.download = 'brochure.pdf';
+
+            // Programmatically trigger a click event on the anchor element
+            // This will prompt the browser to download the linked file
+            link.click();
+        });
+    </script>
+<script>
+    const showImageBtn = document.getElementById('showImageBtn');
+    const modal = document.getElementById('myModal');
+    const modalImage = document.getElementById('modalImage');
+    const closeButton = document.getElementById('close11Button');
+
+    showImageBtn.addEventListener('click', () => {
+        // Set the source of the modal image to the full-size image URL
+        modalImage.src = '/assets/img/master.jpg';
+
+        // Display the modal
+        modal.style.display = 'flex';
+
+        // Add a class to the body to prevent scrolling
+        document.body.classList.add('modal-open');
+    });
+
+    closeButton.addEventListener('click', () => {
+        // Close the modal when the close button is clicked
+        modal.style.display = 'none';
+
+        // Remove the class from the body to re-enable scrolling
+        document.body.classList.remove('modal-open');
+    });
+</script>
 
 </body>
 
